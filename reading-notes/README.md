@@ -4,7 +4,7 @@ Notes from assigned readings for CodeAcademy's **Code 201: Foundations of Softwa
 
 ## Contents
 
-1. [Introductory HTML and JavaScript](#1-introductory-html-and-javascript)
+1. [Introductory HTML and JavaScript](reading-notes/README.md#introductory-html-and-javascript)
 2. HTML Text, CSS Introduction, and MAsic JavaScript Instructions
 3. HTML Lists, CSS Boxes, JS Control Flow
 4. HTML Links, CSS Layout, JS Functions
