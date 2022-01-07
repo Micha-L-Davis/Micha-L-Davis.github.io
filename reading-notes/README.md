@@ -4,7 +4,7 @@ Notes from assigned readings for CodeAcademy's **Code 201: Foundations of Softwa
 
 ## Contents
 
-1. [Introductory HTML and JavaScript](reading-notes#1-introductory-html-and-javascript)
+1. [Introductory HTML and JavaScript](#1-introductory-html-and-javascript)
 2. HTML Text, CSS Introduction, and MAsic JavaScript Instructions
 3. HTML Lists, CSS Boxes, JS Control Flow
 4. HTML Links, CSS Layout, JS Functions
@@ -20,32 +20,32 @@ Notes from assigned readings for CodeAcademy's **Code 201: Foundations of Softwa
 14. CSS Transforms, Transitions, and Animations
 15. What Google Learned About Teams
 
-## 1. Introductory HTML and JavaScript
+## Introductory HTML and JavaScript
 
-## 2. HTML Text, CSS Introduction, and MAsic JavaScript Instructions
+## HTML Text, CSS Introduction, and MAsic JavaScript Instructions
 
-## 3. HTML Lists, CSS Boxes, JS Control Flow
+## HTML Lists, CSS Boxes, JS Control Flow
 
-## 4. HTML Links, CSS Layout, JS Functions
+## HTML Links, CSS Layout, JS Functions
 
-## 5. HTML Images; CSS Color & Text
+## HTML Images; CSS Color & Text
 
-## 6. JS Object Literals; The DOM
+## JS Object Literals; The DOM
 
-## 7. HTML Tables; JS Constructor Functions
+## HTML Tables; JS Constructor Functions
 
-## 8. More CSS Layout
+## More CSS Layout
 
-## 9. Forms and Events
+## Forms and Events
 
-## 10. JS Debugging
+## JS Debugging
 
-## 11. Assorted Topics
+## Assorted Topics
 
-## 12. Docs for the HTML <canvas> Element & Chart.js
+## Docs for the HTML <canvas> Element & Chart.js
 
-## 13. Local Storage
+## Local Storage
 
-## 14. CSS Transforms, Transitions, and Animations
+## CSS Transforms, Transitions, and Animations
 
-## 15. What Google Learned About Teams
+## What Google Learned About Teams
