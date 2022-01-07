@@ -5,20 +5,20 @@ Notes from assigned readings for CodeAcademy's **Code 201: Foundations of Softwa
 ## Contents
 
 1. [Introductory HTML and JavaScript](README.md#introductory-html-and-javascript)
-2. HTML Text, CSS Introduction, and MAsic JavaScript Instructions
-3. HTML Lists, CSS Boxes, JS Control Flow
-4. HTML Links, CSS Layout, JS Functions
-5. HTML Images; CSS Color & Text
-6. JS Object Literals; The DOM
-7. HTML Tables; JS Constructor Functions
-8. More CSS Layout
-9. Forms and Events
-10. JS Debugging
-11. Assorted Topics
-12. Docs for the HTML <canvas> Element & Chart.js
-13. Local Storage
-14. CSS Transforms, Transitions, and Animations
-15. What Google Learned About Teams
+2. [HTML Text, CSS Introduction, and Basic JavaScript Instructions](README.md#html-text-css-introduction-and-basic-javascript-instructions)
+3. [HTML Lists, CSS Boxes, JS Control Flow](README.md#html-lists-css-boxes-js-control-flow)
+4. [HTML Links, CSS Layout, JS Functions](README.md#html-links-css-layout-js-functions)
+5. [HTML Images; CSS Color & Text](README.md#html-images-css-color--text)
+6. [JS Object Literals; The DOM](README.md#js-object-literals-the-dom)
+7. [HTML Tables; JS Constructor Functions](README.md#html-tables-js-constructor-functions)
+8. [More CSS Layout](README.md#more-css-layout)
+9. [Forms and Events](README.md#forms-and-events)
+10. [JS Debugging](README.md#js-debugging)
+11. [Assorted Topics](README.md#assorted-topics)
+12. [Docs for the HTML \<canvas> Element & Chart.js](README.md#docs-for-the-html-canvas-element--chart)
+13. [Local Storage](README.md#local-storage)
+14. [CSS Transforms, Transitions, and Animations](README.md#css-transforms-transitions-and-animations)
+15. [What Google Learned About Teams](README.md#what-google-learned-about-teams)
 
 ## Introductory HTML and JavaScript
 
