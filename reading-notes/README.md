@@ -15,7 +15,7 @@ Notes from assigned readings for CodeAcademy's **Code 201: Foundations of Softwa
 9. [Forms and Events](README.md#forms-and-events)
 10. [JS Debugging](README.md#js-debugging)
 11. [Assorted Topics](README.md#assorted-topics)
-12. [Docs for the HTML \<canvas\> Element & Chart.js](README.md#docs-for-the-html-canvas-element--chart)
+12. [Docs for the HTML canvas Element & Chart.js](README.md#docs-for-the-html-canvas-element--chart)
 13. [Local Storage](README.md#local-storage)
 14. [CSS Transforms, Transitions, and Animations](README.md#css-transforms-transitions-and-animations)
 15. [What Google Learned About Teams](README.md#what-google-learned-about-teams)
@@ -42,7 +42,7 @@ Notes from assigned readings for CodeAcademy's **Code 201: Foundations of Softwa
 
 ## Assorted Topics
 
-## Docs for the HTML <canvas> Element & Chart.js
+## Docs for the HTML \<canvas\> Element & Chart.js
 
 ## Local Storage
 
