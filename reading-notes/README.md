@@ -25,6 +25,7 @@ Notes from assigned readings for CodeAcademy's **Code 201: Foundations of Softwa
 ## Introductory HTML and JavaScript
 
 ### HTML Chapter 1: Structure
+
   An HTML page is a text document that uses special tags to enhance the text within them in some way. These tags usually come in pairs, with opening and closing tags. The opening tag can define a named attribute, the value of which adds additional context to the function of the tag.
   
   The structure of a page is defined by the placement of tags.  The common tags that for the code of most pages include:
@@ -33,17 +34,21 @@ Notes from assigned readings for CodeAcademy's **Code 201: Foundations of Softwa
 * **\<body\>** - holds the visible elements of the web page.  Everything in this tag will be rendered by the browser.
 
 ### HTML Chapter 8: Extra Markup
+
   The structure of a page can further be ordered using the following tags and attributes:
+  
 * **\<div\>** and **\<span\>** - group block-level and inline elements together (respectively).
 * **\<iframes\>** - creates a web page embedded within a web page.
 * *id* and *class* attributes - can be added to any tag, and give the content within the tag a named grouping which can be referenced by other code.
 
   Additional information can also be added to the page by including:
-* A **\<!DOCTYPE\>** delcaration - to indicate the version of HTML used by the document.
+  
+* A **\<!DOCTYPE\>** dcelaration - to indicate the version of HTML used by the document.
 * **\<meta\>** tags - allows for numerous types of data about a page, including a description of the page and keywords related to the page's content.
 * **\<!--** and **--\>** markers - enclose text that will not be parsed by the web browser. This can be used for human-read comments and to temporarily 0remove sections of code for debugging.
 
 ### HTML Chapter 17: HTML5 Layout
+
   The latest version of HTML contains new tags for establishing the layout of a webpage.  These standards are evolving, but are already in use. The major difference in layout is replacing **\<div\>** tags with properties identifying the grouping's purpose with simplified tags that achieve the same result and mirror common website design trends.  The new tags are:
 
 * **\<header\>** and **\<footer\>** - for content that goes at the top and bottom of every page.
@@ -57,7 +62,9 @@ Notes from assigned readings for CodeAcademy's **Code 201: Foundations of Softwa
 Note: using these tags requires additional JavaScript in order for the content to be displayed properly by older browsers: *http://html5shiv.googlecode.com/svn/trunk/html5.js*
 
 ### HTML Chapter 18: Process & Design
+
   Certain information is crucial to obtain before designing a site, including:
+
 * Target audience
 * Purpose for the audience to engage with the site
 * What information the audience will want
@@ -71,7 +78,7 @@ Note: using these tags requires additional JavaScript in order for the content t
   A script is a series of instructions read line by like by a computer in order to perform a task. In order for a computer to accomplish any task it must be told every minute step along the way.  To peform tasks with a computer it is necessary to break large tasks into smaller, specific sub tasks. This is often done with a [flowchart](https://mundrisoft.com/tech-bytes/flowchart-in-software-engineering-testing/).
   
 #### B: How do computers fit in with the world around them?
-  Computers rely on using data to form a model of a given object. Each object can have properties that contain data about the object, methods which provide instructions for performing specific tasks using those properties, and events which interperet a user's interactions with the computer into responses from the model.
+  Computers rely on using data to form a model of a given object. Each object can have properties that contain data about the object, methods which provide instructions for performing specific tasks using those properties, and events which interpret a user's interactions with the computer into responses from the model.
   In order to make a web page interactable, the code of a script uses a model of the web page based on the HTML tags present within it.
   
 #### C: How do I write a script for a web page?
@@ -79,7 +86,7 @@ Note: using these tags requires additional JavaScript in order for the content t
 
 ---
 
-## HTML Text, CSS Introduction, and MAsic JavaScript Instructions
+## HTML Text, CSS Introduction, and Basic JavaScript Instructions
 
 ---
 
