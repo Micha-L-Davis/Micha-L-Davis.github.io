@@ -88,6 +88,47 @@ Note: using these tags requires additional JavaScript in order for the content t
 
 ## HTML Text, CSS Introduction, and Basic JavaScript Instructions
 
+### HTML Chapter 2: Text
+
+HTML tags can be used to structure the page into headings and paragraphs.  There are six levels of heading in HTML, (H1 - H6) each smaller compared to the last. Paragraphs are each shown on a new line by default, with a small amount of space between them. I new line can be made in the middle of a paragraph with the \<br /> tag. A horizontal line can be drawn between elements on the page with the \<hr /> tag.
+
+HTML tags can also be used to provide semantic information.  Below is a list of some of these tags:
+
+* \<strong> - emboldens text
+* \<em> - italicizes text
+* \<blockquote> - to show a block of quoted text
+* \<q> - for shorter quotes
+* \<abbr> - to show the meaning of an abbreviation, initialism, or acronym
+* \<cite> - to show the source for a particular piece of text
+* \<dfn> - to show the definition of a new term
+* \<address> - contains contact information for the page author
+* \<ins> and \<del> -  to show when content has been removed or added
+* \<s> - to show content has been removed
+
+### HTML Chapter 10: Introducing CSS
+
+CSS is a way to group content on a page to add styling and layout specific to that group. This is done by using a **selector** to specify a particular element or range of elements.  There are many kinds of selectors, here are three common ones:
+
+* Type selectors - these specify a specific kind of element to style, such as `h1`or `p`.  This will style all elements of a given type
+* Class selectors - these styles act on all elements with the given class property
+* ID selectors - this will target the element with the given unique id.
+
+Style declarations are formed by first indicating the name of the property to modify, such as the `font-family`, and the value to assign to the property.
+
+### JS Chapter 2: Basic JavaScript Instructions
+
+A script contains a series of instructions called 'statements.' These statements must cover every detail of the work to be done. To facilitate this, we can declare _variables_ which act as containers for data. Data can be added to, removed from or modified within a variable. When a script requires the data in a variable, it can ask for it by name.
+
+Variables can also be made into _arrays_, which are containers that can hold multiple data values of the same type.  JavaScript recognizes three basic types: numbers, strings and boolean values.
+
+We can also create _expressions_, which are statements which result in a single value.  This can be as simple as assigning a value to a variable, or a complex evaluation of multiple values using _operators_ such as =, \*, +, > and &&.
+
+### JS Chapter 4: Decisions and Loops
+
+The program can make logical evaluations to decide what part of the code to run. This is typically done with an `if... else` statement. These statements allow us to use conditional operators to evaluate a set of values.  If the evaluation is `true` then whatever is enclosed within the `if` statement will run--otherwise it will run whatever does is found within the `else` statement (if present), or the next line of code after the `if` statement (if not).
+
+If the logical evaluations for a given condition are too numerous, we can instead use a `switch` statement.  The switch evaluates a variable and compares it to case conditions.  If the condition is satisfied, the code within that case is run.  At the end of each case is a `break` statement that ends the execution of code within the switch.
+
 ---
 
 ## HTML Lists, CSS Boxes, JS Control Flow
