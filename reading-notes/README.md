@@ -29,35 +29,35 @@ Notes from assigned readings for CodeAcademy's **Code 201: Foundations of Softwa
   An HTML page is a text document that uses special tags to enhance the text within them in some way. These tags usually come in pairs, with opening and closing tags. The opening tag can define a named attribute, the value of which adds additional context to the function of the tag.
   
   The structure of a page is defined by the placement of tags.  The common tags that for the code of most pages include:
-* **\<html\>** - indicates to the browser that the code between the tags is HTML code.
-* **\<head\>** - contains information about the page, including the \<title\> tag.
-* **\<body\>** - holds the visible elements of the web page.  Everything in this tag will be rendered by the browser.
+* `<html>` - indicates to the browser that the code between the tags is HTML code.
+* `<head>` - contains information about the page, including the \<title\> tag.
+* `<body>` - holds the visible elements of the web page.  Everything in this tag will be rendered by the browser.
 
 ### HTML Chapter 8: Extra Markup
 
   The structure of a page can further be ordered using the following tags and attributes:
   
-* **\<div\>** and **\<span\>** - group block-level and inline elements together (respectively).
-* **\<iframes\>** - creates a web page embedded within a web page.
-* *id* and *class* attributes - can be added to any tag, and give the content within the tag a named grouping which can be referenced by other code.
+* `<div>` and `<span>` - group block-level and inline elements together (respectively).
+* `<iframes>` - creates a web page embedded within a web page.
+* `id` and `class` attributes - can be added to any tag, and give the content within the tag a named grouping which can be referenced by other code.
 
   Additional information can also be added to the page by including:
   
-* A **\<!DOCTYPE\>** dcelaration - to indicate the version of HTML used by the document.
-* **\<meta\>** tags - allows for numerous types of data about a page, including a description of the page and keywords related to the page's content.
-* **\<!--** and **--\>** markers - enclose text that will not be parsed by the web browser. This can be used for human-read comments and to temporarily 0remove sections of code for debugging.
+* A `<!DOCTYPE>` dcelaration - to indicate the version of HTML used by the document.
+* `<meta>` tags - allows for numerous types of data about a page, including a description of the page and keywords related to the page's content.
+* `<!--**` and `**-->` markers - enclose text that will not be parsed by the web browser. This can be used for human-read comments and to temporarily 0remove sections of code for debugging.
 
 ### HTML Chapter 17: HTML5 Layout
 
-  The latest version of HTML contains new tags for establishing the layout of a webpage.  These standards are evolving, but are already in use. The major difference in layout is replacing **\<div\>** tags with properties identifying the grouping's purpose with simplified tags that achieve the same result and mirror common website design trends.  The new tags are:
+  The latest version of HTML contains new tags for establishing the layout of a webpage.  These standards are evolving, but are already in use. The major difference in layout is replacing `<div>` tags with properties identifying the grouping's purpose with simplified tags that achieve the same result and mirror common website design trends.  The new tags are:
 
-* **\<header\>** and **\<footer\>** - for content that goes at the top and bottom of every page.
-* **\<nav\>** - contains the sites primary navigation links.
-* **\<article\>** - indicates a section of content which could potentially stand alone. A page may contain several, and these tags can be nested to indicate associated information.
-* **\<aside\>** - inside an \<article\> element, it should contain additional information related to the content of the article.  Elsewhere, it should contain additional information related to the entire page.
-* **\<section\>** - provides another way to group content on a page, either by collecting pieces of content together or by spreading out large content over multiple areas.
-* **\<hgroup\>** - groups header content together so it can be treated as a single piece of content regardless of the size of the headers within. Good for subtitles.
-* **\<figure\>** - used to contain content referenced from the main flow of an article. Examples: images, videos, graphs, diagrams, code samples, supporting text
+* `<header>` and `<footer\>` - for content that goes at the top and bottom of every page.
+* `<nav>` - contains the sites primary navigation links.
+* `<article>` - indicates a section of content which could potentially stand alone. A page may contain several, and these tags can be nested to indicate associated information.
+* `<aside>` - inside an `<article>` element, it should contain additional information related to the content of the article.  Elsewhere, it should contain additional information related to the entire page.
+* `<section>` - provides another way to group content on a page, either by collecting pieces of content together or by spreading out large content over multiple areas.
+* `<hgroup>` - groups header content together so it can be treated as a single piece of content regardless of the size of the headers within. Good for subtitles.
+* `<figure>` - used to contain content referenced from the main flow of an article. Examples: images, videos, graphs, diagrams, code samples, supporting text
 
 Note: using these tags requires additional JavaScript in order for the content to be displayed properly by older browsers: *http://html5shiv.googlecode.com/svn/trunk/html5.js*
 
@@ -94,16 +94,16 @@ HTML tags can be used to structure the page into headings and paragraphs.  There
 
 HTML tags can also be used to provide semantic information.  Below is a list of some of these tags:
 
-* \<strong> - emboldens text
-* \<em> - italicizes text
-* \<blockquote> - to show a block of quoted text
-* \<q> - for shorter quotes
-* \<abbr> - to show the meaning of an abbreviation, initialism, or acronym
-* \<cite> - to show the source for a particular piece of text
-* \<dfn> - to show the definition of a new term
-* \<address> - contains contact information for the page author
-* \<ins> and \<del> -  to show when content has been removed or added
-* \<s> - to show content has been removed
+* `<strong>` - emboldens text
+* `<em>` - italicizes text
+* `<blockquote>` - to show a block of quoted text
+* `<q>` - for shorter quotes
+* `<abbr>` - to show the meaning of an abbreviation, initialism, or acronym
+* `<cite>` - to show the source for a particular piece of text
+* `<dfn>` - to show the definition of a new term
+* `<address>` - contains contact information for the page author
+* `<ins>` and `<del>` -  to show when content has been removed or added
+* `<s>` - to show content has been removed
 
 ### HTML Chapter 10: Introducing CSS
 
@@ -121,7 +121,7 @@ A script contains a series of instructions called 'statements.' These statements
 
 Variables can also be made into _arrays_, which are containers that can hold multiple data values of the same type.  JavaScript recognizes three basic types: numbers, strings and boolean values.
 
-We can also create _expressions_, which are statements which result in a single value.  This can be as simple as assigning a value to a variable, or a complex evaluation of multiple values using _operators_ such as =, \*, +, > and &&.
+We can also create _expressions_, which are statements which result in a single value.  This can be as simple as assigning a value to a variable, or a complex evaluation of multiple values using _operators_ such as `=`, `*`, `+`, `>` and `&&`.
 
 ### JS Chapter 4: Decisions and Loops
 
@@ -132,6 +132,38 @@ If the logical evaluations for a given condition are too numerous, we can instea
 ---
 
 ## HTML Lists, CSS Boxes, JS Control Flow
+
+### HTML Chapter 3: Lists
+
+Content can be organized into lists in three ways: 
+
+* Ordered List `<ol>` - produces a numbered list. List items are enclosed in `<li>` tags.
+* Unordered List `<ul>` - produces a bulleted list. List items are enclosed in `<li>` tags.
+* Definition List `<dl>` - produces a list of terms and their meanings. Terms are enclosed within `<dt>` tags, and definitions are enclosed whithin `<dd>` tags.
+
+Lists can be nested within one another by putting a new list inside an existing list item element.
+
+### HTML Chapter 13: Boxes
+
+Each HTML element has properties which can manipulate the attributes of the box containing it. Most values can be set in absolute pixels, as a percentage of the browser window's (or containing box's) total width, based on the size of the text within the box with ems, among other units of measure.
+
+* Dimension - `width` and `height` set the dimensions of the box
+* Border - `border-width` draws the border at the given width
+* Padding -  `padding` adds space between the border of a box and its content
+* Margin - `margin` add space between a box and the edges of the screen or adjacent boxes
+
+Elements can be hidden by applying a `visibility` property. This will hide the box and everything within it, but leaves a space in its place. To hide an element and collapse other elements into the space it would otherwise leave, the `display` property can be set to `none`.  The `display` property can also be used to reogranize block content into inline content (or vice versa) with the `inline` and `block` values. 
+
+### CSS Chapter 4: Decisions and Loops (revisited)
+
+JS is loosely typed, and will not necessarily throw an error if a variable has an unexpected type for the operation in which it is used. JS will use _type coercion_ to attempt to convert an unexpected type into the expected type.  This can lead to some unexpected results.  It is therefore recommended to use strict equality `===` to ensure that type coercion doesn't [play telephone](https://www.thefreedictionary.com/Game+of+telephone) with a variable's value.
+
+Because of this flexibility, any value can be evaluated as `true` or `false` by a boolean condition. This leads to _truthiness_ and _falsiness_, making another case for using strict equality in most conditional evaluations.
+
+JS has three different kinds of loops.
+* `for` - is best used for looping through the values of an array. The loop increases an iterator with each loop, and terminates the loop when the iterator reaches a defined limit.
+* `while` - continues to loop as long as a given value evaluates to true--potentially forever. Dangerous magic.
+* `do...while` - similar to `while` but it performs the code block designated by `do` before evaluating the `while` conditional. This guarantees at least one run through the code, even if the condition was false from the start.
 
 ---
 
