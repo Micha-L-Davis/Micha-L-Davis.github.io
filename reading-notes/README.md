@@ -169,6 +169,46 @@ JS has three different kinds of loops.
 
 ## HTML Links, CSS Layout, JS Functions
 
+### HTML Chapter 4: Links
+
+Links are essential to the worldwide web. A link is created with the `<a>` tag and the address the link references is assigned via the `href` property.  Anything enclosed within the tag will link a user's browser to the address when it is clicked on. The addresses can be simple, such as a directory or file within the web site's file structure, or the address can be detailed and specific. 
+
+One such specific form of address is a link to an email address.  These links are preceeded with `mailto:` followed by the email address. It is also possible to create a link to a place inside the currently open page using the `#` symbol followed by the name of an existing id property on the page.
+
+### HTML Chapter 15: Layout
+
+The boxes which contain HTML elements are considered inherently either _block-level_ (meaning it will organize itself vertically with respect to adjacent elements) or _inline_ (meaning it is contained within or beside a line of text). Block-level elements are the primary layout organizers, and can be nested within one another to form parent/child relationships which CSS can use when deciding how style is applied.
+
+The position of elements on the page is dependent on the active _positioning scheme_ set in the element's `position` property. In some schemes, boxes can overlap. The `z-index` peoperty can be set to decide what element goes on top. Below are the possible schemes:
+
+* Normal flow - default behavior.
+* Relative positioning - shifts the element relative to where it should be in normal flow.
+* Absolute positioning - takes the item out of normal flow and sets it to an absolute position relative to its parent.
+* Fixed positioning - takes the item out of normal flow and sets it to an absolute position in the view window.
+* Floating elements - takes the item out of normal flow and sets it to the far right or left side of its parent as a block-level element.
+
+A page can be structured to have a fixed width by setting the width of elements in absolute pixels. Alternatively, the size of elements can be described in percentages, in which case the content will stretch to fit the window provided. Pages are typically between 960-1000 pixels wide.
+
+### JS Chapter 3: Functions
+
+A function is a set of instructions which can be called as needed to do a specific piece of work. Functions can be created either as an expression(fig 1) or as a declaration (fig 2).
+
+<sub>fig 1. function expression</sub>
+```js
+let myFunction = function() {
+  // code goes here, hon
+}
+```
+
+<sub>fig 2. function declaration</sub>
+```js
+function myFunction() {
+  // this space intentionally blank
+}
+```
+
+Expression form is best used when the function will only be used within limited scope (like a method). It cannot be called unless it has already been loaded into memory. Conversely, a declared function will be recognized by the compiler before the first expressions are read from the script.
+
 ---
 
 ## HTML Images; CSS Color & Text
