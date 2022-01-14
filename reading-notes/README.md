@@ -213,6 +213,29 @@ Expression form is best used when the function will only be used within limited 
 
 ## HTML Images; CSS Color & Text
 
+### Chapter 5: Images
+
+Images can be added via the `<img>` tag, usually within a semantic `<figure>` element. The specific image to display is given via the `src` property. This can be a local file path or a URL. It is also important for accessibility reasons to include `alt` property values for all images that detail the contents of the image. Images should be saved at the size they will be displayed on the page. Acceptable image formats include:
+
+* .jpg
+* .gif
+* .png
+
+### Chapter 11: Color
+
+Color is an important design aspect that helps the user empotionally connect with the experience you are attempting to provide. Color can be designated in three ways:
+
+* RGBA - values for Red, Green, Blue and Alpha from 0 to 255
+* HSLA - values for Hue (0-360), Saturation (0-100%), Lightness (0-100%) and Alpha (0.0-1.0)
+* hexadecimal codes - six-figure hexadecimal codes usually preceeded with a #.
+* name - many colors can be called by name, such as `red`, `light blue`, or `goldenrod`
+
+Contrast between text and background is also an important accessibility feature.
+
+### Chapter 12: Text
+
+Text can be presented in a number of ways, included properties to designate the font, the size of text, the font weight, style, kerning, spacing, and more. Many fonts are widespread and commonly found on most computers.  Other fonts are rarer, so it is important to use common font families.
+
 ---
 
 ## JS Object Literals; The DOM
