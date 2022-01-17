@@ -240,6 +240,27 @@ Text can be presented in a number of ways, included properties to designate the 
 
 ## JS Object Literals; The DOM
 
+### Chapter 3: Object Literals
+
+An object is a collection of variables and functions which can be used to model something--in the case of a website this would be the browser or the document it displays. The variables within an object are called the object's "properties" and the functions are called the object's "methods." There are many ways to create an object.  Perhaps the most common is with Literal Notation, as follows:
+
+```js
+let myObject = {
+  propertyOne: "value 1",
+  propertyTwo: 2,
+  myMethod: function() {
+    return propertyOne;
+  };
+```
+
+The properties of an object can be accessed either via dot notation (such as `let myVariable = myObject.propertyTwo;`) or via bracket notation (as in `let myOtherVariable = myObject['propertyOne'];`). 
+
+### Chapter 5: The DOM
+
+When a web document is loaded, a series of objects is loaded into memory in the form of a tree representing all of the elements of the document.  This tree is called the Document Object Model (DOM).  JavaScript can use this model to access and change the contents and properties of any element in the document.
+
+The DOM is comprised of nodes.  Each node can be of one of four types: document nodes, element nodes, attribute nodes and text nodes. Element nodes can be selected via a range of methods that identify an element based on its id, class, attributes, tag name, or using CSS selectors. If a query for a node could return a range of nodes, the query will always return a `NodeList`. Once an element node is selected, the properties or text witin the element can be modified.
+
 ---
 
 ## HTML Tables; JS Constructor Functions
