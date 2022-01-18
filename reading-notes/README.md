@@ -265,6 +265,30 @@ The DOM is comprised of nodes.  Each node can be of one of four types: document 
 
 ## HTML Tables; JS Constructor Functions
 
+### HTML Chapter 7: Tables
+
+Website content can be displayed in tables by using the `<table>` tag.  Within this tag, rows can be drawn by adding a `<tr>` tag.  Finally, within each row, cells can be added with the `<td>` tag (for table data) or `<th>` (in the case of a table header). These elements can be given a `colspan` or `rowspan` attribute to allow them to occupy more than one cell in the table.  Headers can be designated a `scope` attribute, which indicates whether they are a `"col"` or `"row"` header. The table can be further organized by including `<thead>`, `<tbody>`, and `<tfoot>` tags
+
+### JS Chapter 3: Constructor Functions
+
+In order to achieve object-oriented programming in JS, we can use _constructor functions_ to create an object _prototype_ from which other objects can be templated. The syntax follows:
+
+```js
+function myObject (parameterOne, parameterTwo) {
+  this.parameterOne = parameterOne;
+  this.parameterTwo = parameterTwo;
+  this.method = function () {
+    return [this.parameterOne, this.parameterTwo];
+  };
+}
+```
+
+Once the constructor is declared, a new object templated from the constructor can be created using the `new` keyword.
+
+```js
+let newObject = new myObject('argument one', 'argument two')
+```
+
 ---
 
 ## More CSS Layout
