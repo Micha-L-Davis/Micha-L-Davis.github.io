@@ -293,6 +293,12 @@ let newObject = new myObject('argument one', 'argument two')
 
 ## More CSS Layout
 
+There are two additional values for the `display` property that can help arrange multiple elements on a page in relation to one another: `flex` and `grid`.
+
+Flex items will align along the same axis (either inline or block), and stretch along the opposite axis. They will not wrap when the line grows too small, but will try to squish into the same line. This behaviour can be changed with the `flex-wrap` property. Other aspects of flex elements can be altered with the `flex` property.
+
+Setting a group of elements to `display: grid` will similarly group the items, but instead it will align them to a grid that can be defined by the `grid-template-columns` property. Individual elements can occupy multiple grid cells by using the `grid-row` and `grid-column` properties.  The gap between elements can be set with the `gap` property.
+
 ---
 
 ## Forms and Events
