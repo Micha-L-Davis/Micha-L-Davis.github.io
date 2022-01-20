@@ -303,6 +303,35 @@ Setting a group of elements to `display: grid` will similarly group the items, b
 
 ## Forms and Events
 
+### Forms
+
+Forms enable a website author to collect information from the user. All forms are created within the `<form>` tag, and use the `<input>` tag to indicate the `type` of input required.
+
+Input `type` property values include:
+
+* `"text"` - for a single line of text input.
+* `"password"` - for a single line of text input with the entered characters obscured.
+* `"textarea"` - for multiline text entry.
+* `"radio"` - to select just one of several options.
+* `"checkbox"` - to select one or more of several options.
+* `"file"` - to upload a file.
+* `"submit"`- to send the contents of the form to the server.
+* `"image"` - to add button functionality to an image.
+* `"hidden"` - to allow the web author to send information along with the form that the user does not submit.
+
+There are a few other tags involved in form creation:
+
+* `<select>` & `<option>` - provide a drop down list of several options to choose from.
+* `<button>` - allows the combination of different kinds of media into the representation of a button.
+
+### Events
+
+An event is a way of indicating to JS that something has occurred. We can bind an event to an element on the page, and use that event to trigger a JS function. This is done through an event listener. The syntax for this is:
+
+```js
+element.addEventListener('eventName', functionName, false);
+```
+
 ---
 
 ## JS Debugging
