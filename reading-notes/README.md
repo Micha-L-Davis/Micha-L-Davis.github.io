@@ -336,6 +336,23 @@ element.addEventListener('eventName', functionName, false);
 
 ## JS Debugging
 
+Debugging can be a challenging process.  Understanding the concept of the execution stack can help. The execution stack is a list of all the instructions fed to the computer by the script. They are held in order, with instructions placed earlier in the stack (and this lower) are dependent on the successful execution of instructions placed later (and higher) in the stack.  If an error occurs, the full execution stack will be displayed along with the error.  This information includes the lines of code calling each instruction and, of course, the order in which they were called.
+
+Another helpful thing to keep in mind when debugging is understanding execution context. This context mirrors the concept of scope, in that there are chiefly two contexts of concern: global level context, and function level context.  Discovering in which context the error occurs will limit your solution options.
+
+Liberal use of console reports can also help narrow down pesky bugs. Instructions such as  `console.log()`, `console.error()`, and `console.warn()` each give different context to the messages sent to the console.
+
+There are seven different types of error in JS.  They are:
+
+* Error - used as a generic error upon which all other errors are based
+* SyntaxError - proper syntax has not been used
+* ReferenceError - attempted to reference a variable out of scope or undeclared
+* TypeError - the expected type of a variable does not match the type recieved, an the variable cannot be coerced
+* URIError - improper use of URI methods
+* EvalError - improper use of `eval()` function.
+
+If you know what type of error you might expect from a given block of code, you can surround the code in a `try` statement.  If the expected error occurs, the `try` statement will transfer control to an associated `catch` statement and implement the instructions there.  This can give you a way to handle expected errors and inform the user of the error, rather than letting them ride the crash with no clue.
+
 ---
 
 ## Assorted Topics
