@@ -357,6 +357,37 @@ If you know what type of error you might expect from a given block of code, you 
 
 ## Assorted Topics
 
+### Images
+
+You can easily control the size of images by creating styles for each specific dimension which select a class associated with that size of image.  EG: 
+
+```css
+img.large {  
+  width: 900px;
+  height: 600px;
+}
+```
+
+It is possible to align images with the `align` attribute, but it is more common to `float` images. An image can be centered by transforming it to a block level element, and then centering as normal with `margin`.
+
+You can set a background image for a page, or even tile a repeating image.  This is an ancient, nearly forgotten practice, and no known web authors today employ this method of site decoration.
+
+### Practical Information
+
+Visitors can find a site more easily if it is optimized to be discovered by web search engines. This is called Search Engine Optimization, and depends on understanding how search engines find and read websites.
+
+You can collect analytical data about a site and use that data to understand how users engage with it.  This understanding can lead to positive design changes.
+
+Web sites are hosted on web servers.  There are many, and some of them are even honest.
+
+### Audio and Video elements
+
+Audio and video can be embedded into a page. It is also possible to control the design of the audio/video interface using CSS and JavaScript.
+
+### Flash 
+
+Flash is a prehistoic animation technology. It has become extinct due to a number of factors, primarily because it has been supplanted by more accessible technologies.  At one time, entire websites were based on flash. In fact, I still have one I built back in 2006 on a CD here somewhere. Don't ask me what a CD is, those are ancient, too.
+
 ---
 
 ## Docs for the HTML \<canvas\> Element & Chart.js
