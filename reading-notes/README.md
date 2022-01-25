@@ -392,6 +392,61 @@ Flash is a prehistoic animation technology. It has become extinct due to a numbe
 
 ## Docs for the HTML \<canvas\> Element & Chart.js
 
+### Chart.js
+
+Chart.js is a simple script library for rendering animated graphs and charts in JavaScript. These charts are drawn on a `<canvas>` element in an HTML document. by calling `new Chart(canvas)` and accessing one of the Chart methods, we can draw a variety of charts. Each chart type can accept as an argument a formatted data object which will be used to draw the cart.  These types are:
+
+* Line
+* Bar
+* Radar
+* Doughnut/Pie
+* Polar Area
+* Bubble
+* Scatter
+* Area
+* Mixed
+
+An example of the formatted data object for a bar graph is:
+
+```js
+var barData = {
+	labels : ["January","February","March","April","May","June"],
+	datasets : [
+		{
+			fillColor : "#48A497",
+			strokeColor : "#48A4D1",
+			data : [456,479,324,569,702,600]
+		},
+		{
+			fillColor : "rgba(73,188,170,0.4)",
+			strokeColor : "rgba(72,174,209,0.4)",
+			data : [364,504,605,400,345,320]
+		}
+
+	]
+}
+```
+<sup>Source: https://www.webdesignerdepot.com/2013/11/easily-create-stunning-animated-charts-with-chart-js/</sup>
+
+### \<Canvas>
+
+The `<canvas>` tag can also be used to draw 2D and 3D shapes. In order to use it for this purpose, the canvas element must be retrieved from the DOM, and the rendering context must be applied to it:
+
+```js
+var canvas = document.getElementById('myID');
+var context = canvas.getContext('2d');
+```
+
+Only two primitive shapes are supported: rectangles and paths.  To draw a rectangle we invoke one of three functions:
+
+* `fillRect(x, y, width, height)` - filled rectangle
+* `strokeRect(x, y, width, height)` - outlined rectangle
+* `clearRect(x, y, width, height)` - clears the drawing in the specified rectangle
+
+To draw a path, we must first create the path with `beginPath()`. Points can then be added to the path via the methods of the path object, such as `lineTo(x, y)`. The path can be closed with `closePath()`, given an outline with `stroke()` and filled in with `fill()`.
+
+These shapes can be styled with various properties, such as the `strokeStyle` or `fillStyle`, or methods such as `createLinearGradient(x1, y1, x2, y2)` and `addColorStop(position, color)`. 
+
 ---
 
 ## Local Storage
