@@ -567,3 +567,6 @@ The animation can be set to repeat using the `animation-iteration-count` propert
 ---
 
 ## What Google Learned About Teams
+
+In brief: Google undertook the task of comprehending why some teams fail and others succeed in spite of a lack of apparent shared composition or style of group interaction between successful groups or unsuccessful groups. In testing and researching trends in teamwork, two patterns finally emerged: successful groups allow all members to contribute equally, and members in that group all had a high "average social sensitivity." The conclusion reached is that when members of a group feel safe and accepted within that group they contribute to the group's shared intellect, and thus to the group's chance of success.
+
