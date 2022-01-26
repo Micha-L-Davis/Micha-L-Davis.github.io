@@ -451,6 +451,24 @@ These shapes can be styled with various properties, such as the `strokeStyle` or
 
 ## Local Storage
 
+HTML5 includes a new way to access storage for named key/value pairs within the client browser.  This data will persist between views of the web site, even if the browser is closed.
+
+To make sure a browser is compatible with this feature, the following function can be used:
+```js
+function supports_html5_storage() {
+  try {
+    return 'localStorage' in window && window['localStorage'] !== null;
+  } catch (e) {
+    return false;
+  }
+}
+```
+<sup>Source: http://diveinto.html5doctor.com/storage.html</sup>
+
+Any of the native data types supported byu JS can be stored this way, though they are all stored as strings and will need to be converted to other types upon retrieval.  Data is retieved by accessing the `localStorage` object on the global `window` object with the `getItem()` and `setItem()` methods. You can also `removeItem()` or `clear()` the entire storage, and you can find the `length` or use an index number to find a `key()` in storage.
+
+All of these methods trigger a `storage` event on the `window` object. This event returns the `StorageEvent` object.
+
 ---
 
 ## CSS Transforms, Transitions, and Animations
