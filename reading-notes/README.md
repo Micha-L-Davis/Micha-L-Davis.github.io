@@ -473,6 +473,97 @@ All of these methods trigger a `storage` event on the `window` object. This even
 
 ## CSS Transforms, Transitions, and Animations
 
+### Transforms
+
+Transforms are a new method of manipulating an element in a document.  The transform of an element can be manipulated in 2 or 3 dimensions. The origin coordinate for these transformations is the exact center of the element by default. This can be changed using the `transform-origin` property.  The 2D transforms are:
+
+* `transform: scale(##)` - changes the size of an element
+* `transform: translate(##, ##)` - changes the location of an element
+* `transfrom: rotate(##)` - changes the rotation of an element
+* `transform: skew(##, ##)` - distorts the element on one or more axes 
+
+For 3D transformations, there needs to be an established `transform: perspective(##)` set either directly on the element or on the element's parent.  The element can then be transformed (on three axes rather than two) using the same properties as 2D transformation, with the exception of `skew`, for which there is no z-axis option.
+
+### Transitions
+
+Transitions are simple CSS animations that can blend between two property states. The basic syntax follows this example:
+
+```
+.box {
+  background: #2db34a;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.box:hover {
+  background: #ff7b29;
+}
+```
+<sup>Source: https://learn.shayhowe.com/advanced-html-css/transitions-animations/</sup>
+
+By designating the property to change with `transition-property` then the instructions in `transition-duration` and `transition-timing-function` will be applied whenever that element is changed.  Not all properties can be transitioned.  Here is a list of common transitionable elements:
+
+* background-color
+* background-position
+* border-color
+* border-width
+* border-spacing
+* bottom
+* clip
+* color
+* crop
+* font-size
+* font-weight
+* height
+* left
+* letter-spacing
+* line-height
+* margin
+* max-height
+* max-width
+* min-height
+* min-width
+* opacity
+* outline-color
+* outline-offset
+* outline-width
+* padding
+* right
+* text-indent
+* text-shadow
+* top
+* vertical-align
+* visibility
+* width
+* word-spacing
+* z-index
+
+### Animations
+
+More complex animations can be achieved using `@keyframes`. This is a CSS rule that includes the name of the animation, the breakpoints in the animation (if any), and the properties to animate. 
+
+```
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 488px;
+    top: 0;
+  }
+}
+```
+<sup>Source: https://learn.shayhowe.com/advanced-html-css/transitions-animations/</sup>
+
+Once this rule is established, the animation can be applied by name to any other rule by using the `animation-name` property. Playback for the animation can be adjusted using `animation-duration`, `animation-timing-function` and `animation-delay`, similarly to transitions. 
+
+The animation can be set to repeat using the `animation-iteration-count` property, or played in reverse (in a number of ways) using `animation-direction`.
+
 ---
 
 ## What Google Learned About Teams
