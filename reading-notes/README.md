@@ -1,6 +1,6 @@
 # Reading Notes
 
-Summaries of assigned readings for the CodeFellows Software Development track.
+Summaries of assigned readings for the CodeFellows Software Development track. Dated Jan-10 - May 28, 2022
 
 ## Code 201 - Foundations of Software Development
 
@@ -25,3 +25,8 @@ Summaries of assigned readings for the CodeFellows Software Development track.
 ## Code 301 - Intermediate Software Development
 
 1. [Introduction to React and Components](code-301.md#introduction-to-react-and-components)
+
+---
+
+## Code 401 - Advanced Software Development
+
