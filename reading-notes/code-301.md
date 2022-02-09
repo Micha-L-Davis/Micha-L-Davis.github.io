@@ -25,3 +25,14 @@
      * **Reliability**
      * **System maintenance and evolution**
      * **Independent**
+
+## Props in React
+
+* `props` is short for "properties"
+* Props are used in React to pass information between React components
+* Information is passed down from parent component to child components. 
+
+## Things I want to know more about
+
+* The additional features available to Function or Class components
+* JSX in general
