@@ -1,4 +1,8 @@
-# Code 201 Reading Notes
+# Reading Notes
+
+Summaries of assigned readings for the CodeFellows Software Development track.
+
+## Code 201 - Foundations of Software Development
 
 1. [Introductory HTML and JavaScript](code-201.md#introductory-html-and-javascript)
 2. [HTML Text, CSS Introduction, and Basic JavaScript Instructions](code-201.md#html-text-css-introduction-and-basic-javascript-instructions)
@@ -18,6 +22,6 @@
 
 ---
 
-# Code 301 Reading Notes
+## Code 301 - Intermediate Software Development
 
-0. [Introduction to React and Components](code-301.md#introduction-to-react-and-components)
+1. [Introduction to React and Components](code-301.md#introduction-to-react-and-components)
