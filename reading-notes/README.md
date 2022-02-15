@@ -25,6 +25,7 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 ## Code 301 - Intermediate Software Development
 
 1. [Introduction to React and Components](code-301.md#introduction-to-react-and-components)
+2. [State and Props](code-301.md#state-and-props)
 
 ---
 
