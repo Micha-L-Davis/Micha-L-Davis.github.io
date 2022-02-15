@@ -1,6 +1,7 @@
 # Code 301 Reading Notes
 
-0. [Introduction to React and Components](code-301.md#introduction-to-react-and-components)
+1. [Introduction to React and Components](code-301.md#introduction-to-react-and-components)
+2. [State and Props](code-301.md#state-and-props)
 
 ---
 
@@ -36,3 +37,40 @@
 
 * The additional features available to Function or Class components
 * JSX in general
+
+---
+
+# State and Props
+
+Based off [the diagram](https://miro.medium.com/max/1400/0*0saPKFiTUk6W3FYp), what happens first, the ‘render’ or the ‘componentDidMount’?
+* the 'render'
+
+What is the very first thing to happen in the lifecycle of React?
+* the constructor is called in the Mounting phase
+
+Put the following things in the order that they happen: 
+* constructor 
+* render 
+* React Updates
+* componentDidMount 
+* componentWillUnmount 
+
+What does componentDidMount do?
+* it is a place to set instructions that require the component to be mounted before they are run, such as event subscriptions or network requests
+
+What types of things can you pass in the props?
+* static information that you don't expect to change
+
+What is the big difference between props and state?
+* Props are passed from without and cannot change, state is managed from within and is mutable
+
+When do we re-render our application?
+* Any time state changes
+
+What are some examples of things that we could store in state?
+* anything that may change through user interaction or that requires the component to be re-rendered
+
+## Things I want to know more about
+* state seems to be spoken of as if it is an object all its own--is there a state object, or are we just talking about the variables a component might use in general to manage internal data?
+
+---
