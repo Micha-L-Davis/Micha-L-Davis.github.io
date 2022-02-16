@@ -74,3 +74,44 @@ What are some examples of things that we could store in state?
 * state seems to be spoken of as if it is an object all its own--is there a state object, or are we just talking about the variables a component might use in general to manage internal data?
 
 ---
+
+# Passing Functions as Props
+
+## React Docs - lists and keys
+
+* `.map()` returns a new array in which each element is the result of a callback function applied to each element of the source array.
+* looping through an array in JSX is nearly identical as in JS.
+* each list item needs a unique key.
+* the purpose of the key is to help React know when items have changed.
+
+## Spread operator
+
+* The spread operator is a quick way to copy the data from an object or array and use it elsewhere
+* Can be used:
+    * in the place of arguments for a function call
+    * in the place of elements in an array literal
+    * in an object expression in place of key value pairs for an object literal
+    * in place of `Function.prototype.apply()`
+* To combine to arrays:
+```
+arrA = [...arrA, ...arrB];
+```
+* To add new items to an array:
+```
+let arrA = ['3', '2', '1']
+let arrB = ['Ready?, ...arrA, 'Let's jam.']
+```
+* To combine two objects into one:
+```
+let combinedObj = { ...objA, ...objB } 
+```
+
+## How to pass functions between components
+
+* The first step is to create the function within the object where the state that needs to change is located.
+* In the [example video](https://www.youtube.com/watch?v=c05OL7XbwXU), the `increment` function takes a string argument and maps a state array through a callback function that increments the appropriate state object's `count` property based on the argument.
+* A method is passed from a parent component to a child component as a prop.
+* The method is invoked by accessing it from props through dot notation and initializing it.
+
+## Things I want to know more about
+* Nothing came to mind this time. It all seems pretty straightforward.
