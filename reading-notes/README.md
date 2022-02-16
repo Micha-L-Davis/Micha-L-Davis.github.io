@@ -26,6 +26,7 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 
 1. [Introduction to React and Components](code-301.md#introduction-to-react-and-components)
 2. [State and Props](code-301.md#state-and-props)
+3. [Passing Functions as Props](code-301.md#passing-functions-as-props)
 
 ---
 
