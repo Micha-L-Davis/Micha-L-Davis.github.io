@@ -3,6 +3,7 @@
 1. [Introduction to React and Components](code-301.md#introduction-to-react-and-components)
 2. [State and Props](code-301.md#state-and-props)
 3. [Passing Functions as Props](code-301.md#passing-functions-as-props)
+4. [React and Forms](code-301.md#react-and-forms)
 
 ---
 
@@ -116,3 +117,33 @@ let combinedObj = { ...objA, ...objB }
 
 ## Things I want to know more about
 * Nothing came to mind this time. It all seems pretty straightforward.
+
+---
+
+# React and Forms
+
+## React Docs - Forms
+
+* A 'Controlled Component' is an input form element whose value is controlled by React.
+* The user's responses are stored as they are entered because the 'source of truth' for the input element's data is the React component state.
+* If there is an event handler on an input field, in order to target what the user is entering we apply a name property to the elements, which we can reference through the `event` object.
+
+## The Conditional (Ternary) Operator
+
+* We use a ternary operator to shorthand and if/else statement.
+* Example:
+```
+if(x===y){
+  console.log(true);
+} else {
+  console.log(false);
+}
+```
+becomes:
+```
+x === y ? console.log(true) : console.log(false);
+```
+
+## Things I want to know more about
+* I have no further questions.
+
