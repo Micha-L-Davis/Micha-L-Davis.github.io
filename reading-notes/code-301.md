@@ -4,6 +4,7 @@
 2. [State and Props](code-301.md#state-and-props)
 3. [Passing Functions as Props](code-301.md#passing-functions-as-props)
 4. [React and Forms](code-301.md#react-and-forms)
+5. [Putting it all Together](code-301.md#putting-it-all-together)
 
 ---
 
@@ -147,3 +148,41 @@ x === y ? console.log(true) : console.log(false);
 ## Things I want to know more about
 * I have no further questions.
 
+---
+
+# Putting it all Together
+
+## Thinking in React
+
+* The **single responsibility principle** is a software engineering principle that states a software object should only ever have one reason to change.  In other words, it should exist in a state where it is only *responsible* for performing a *single* task. In terms of a React component, we should prefer creating a new component any time a new functionality must be added to the app, rather than adding that functionality to an existing component.  That way, if any one of those components needs to be edited it will likely only be for one reason--to ensure the sole responsibility of the component works correctly.
+* A 'static' version of the application is made first primarily because the basic structure of a static application requires a lot of typing, but is not complex enough to require a lot of forethought. Conversely, interactivity involves making small, well thought-out additions to the code, and is therefore best saved for last.
+* After building the static app, we must next identify the complete minimal representation of UI state.
+* [Three questions you can ask to determine if something is state](https://reactjs.org/docs/thinking-in-react.html#step-3-identify-the-minimal-but-complete-representation-of-ui-state):
+    * Is it passed in from a parent via props? If so, it probably isn’t state.
+    * Does it remain unchanged over time? If so, it probably isn’t state.
+    * Can you compute it based on any other state or props in your component? If so, it isn’t state
+* [To determine where a piece of state should live](https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live), for each piece of state in the app:
+    * Identify every component that renders something based on that state.
+    * Find a common owner component (a single component above all the components that need the state in the hierarchy).
+    * Either the common owner or another component higher up in the hierarchy should own the state.
+    * If you can’t find a component where it makes sense to own the state, create a new component solely for holding the state and add it somewhere in the hierarchy above the common owner component.
+
+## Higher-Order Functions
+
+* A higher-order function is a function that either takes another function as an argument or returns one.
+* In the below example code, line 2 returns an anonymous function that compares the argument `n` from the higher-order function `greaterThan(n)` to its own argument `m` with the greater than operator.
+```
+function greaterThan(n) {
+  return m => m > n;
+}
+let greaterThan10 = greaterThan(10);
+console.log(greaterThan10(9));
+```
+<sup>https://eloquentjavascript.net/05_higher_order.html#h_xxCc98lOBK</sup>
+
+* The `Array.prototype.map()` method is another example of a higher-order function. It takes a function as an argument, passes each element of an array into that lower-order function, and returns a new array with the results of the function applied to each element.
+
+## Things I want to know more about
+Are delegate functions a thing in JS?
+
+---
