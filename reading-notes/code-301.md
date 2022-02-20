@@ -212,4 +212,7 @@ Are delegate functions a thing in JS?
 * I particularly appreciate the collaboration.  It's easy to notice someone else's small mistakes, it's helpful to have someone else's favorite shortcuts onhand, and it's fun to see how other people approach a problem.
 * Pair programming works by splitting the tasks of program witing into two--one person doing the typing, and one person dictating what is to be typed. 
 
+## Things I want to know more about
+I'm excited to learn more about untethering JS from the browser!
+
 ---
