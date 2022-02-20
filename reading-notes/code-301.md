@@ -5,6 +5,7 @@
 3. [Passing Functions as Props](code-301.md#passing-functions-as-props)
 4. [React and Forms](code-301.md#react-and-forms)
 5. [Putting it all Together](code-301.md#putting-it-all-together)
+6. [Node.js](code-301.md#node\.js)
 
 ---
 
@@ -184,5 +185,31 @@ console.log(greaterThan10(9));
 
 ## Things I want to know more about
 Are delegate functions a thing in JS?
+
+---
+
+# Node.js
+
+## An Introduction to Node.js
+
+* Node.js is a JavaScript runtime environment built on the V8 JavaScript Engine.
+* Chrome's V8 JavaScript Engine is what compiles JavaScript in Chromium-based web browsers.
+* npm is a package manager for Node.js -- it stands for 'Node Package Manager'
+* Currently installed Node.js version: v16.13.2
+* Currently installed npm version: 8.1.2
+* To install a package globally: `npm install -g jshint`
+* Node allows us to run JavaScript server side, and is particularly good at handling lots of real-time interaction requests.
+
+## 6 Reasons for Pair Programming
+
+* The six reasons are:
+    * Greater efficiency
+    * Engaged collaboration
+    * Learning from fellow students
+    * Social skills
+    * Job interview readiness
+    * Work environment readiness
+* I particularly appreciate the collaboration.  It's easy to notice someone else's small mistakes, it's helpful to have someone else's favorite shortcuts onhand, and it's fun to see how other people approach a problem.
+* Pair programming works by splitting the tasks of program witing into two--one person doing the typing, and one person dictating what is to be typed. 
 
 ---
