@@ -29,6 +29,7 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 3. [Passing Functions as Props](code-301.md#passing-functions-as-props)
 4. [React and Forms](code-301.md#react-and-forms)
 5. [Putting it all Together](code-301.md#putting-it-all-together)
+6. [Node.js](code-301.md#nodejs)
 
 ---
 
