@@ -6,6 +6,7 @@
 4. [React and Forms](code-301.md#react-and-forms)
 5. [Putting it all Together](code-301.md#putting-it-all-together)
 6. [Node.js](code-301.md#nodejs)
+7. [REST](code-301.md#rest)
 
 ---
 
@@ -216,3 +217,29 @@ Are delegate functions a thing in JS?
 I'm excited to learn more about untethering JS from the browser!
 
 ---
+
+# REST
+
+## How I explained REST to my brother
+
+* Roy Fielding was an early Internet developer and researcher who helped write the HTTP protocol.
+* The techniques we use today don't work well when talking to all the machines in the world because they were not developed with that use in mind.
+* The Hypertext Transfer Protocol (HTTP) is the means through which locations on the Internet can be described.
+* `GET` retrieves a representation of a resource from a URL
+* `POST` adds a representation of a resource to a system via a URL
+* `PUT` replaces a representation of a resource with another. 
+* `PATCH` partially updates a representation of a resource.
+
+## API Keys
+
+Geocoding API
+Did you get your API key? yes.
+Weather Bit API
+Did you get your API key? yes
+Yelp API Docs
+Did you get your API key? yes
+The Movie DB API Docs
+Did you get your API key? yes
+
+---
+
