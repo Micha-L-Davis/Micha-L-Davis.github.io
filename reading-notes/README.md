@@ -31,6 +31,7 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 5. [Putting it all Together](code-301.md#putting-it-all-together)
 6. [Node.js](code-301.md#nodejs)
 7. [REST](code-301.md#rest)
+8. [APIs](code-301.md#apis)
 
 ---
 
