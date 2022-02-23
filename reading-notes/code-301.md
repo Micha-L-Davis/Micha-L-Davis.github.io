@@ -7,6 +7,7 @@
 5. [Putting it all Together](code-301.md#putting-it-all-together)
 6. [Node.js](code-301.md#nodejs)
 7. [REST](code-301.md#rest)
+8. [APIs](code-301.md#apis)
 
 ---
 
@@ -243,3 +244,23 @@ Did you get your API key? yes
 
 ---
 
+# APIs
+
+## API Design Best Practices
+
+* REST stands for Representational State Transfer
+* REST APIs are designed around objects, data and services accessible to the client.
+* A URI (Uniform Resource Identifier) is used to uniquely distinguish resources.  A common example is an HTTP URL.
+* The most common HTTP verbs are GET, POST, PUT, PATCH, and DELETE.
+* URIs should be based on the resource, not the operation on the resource.
+    * Good example: `https://resource-site.com/resource`
+    * Bad example: `https://resource-site.com/retrieve-resource`
+* Because an increase in requests comes with an increase in server load, it is preferrable to avoid 'chatty' web APIs with a large number of small resources. Instead, bundle related resources into packages which can be sent once and dissected locally for further details.
+* Status codes:
+    * `GET` success: 200 (OK)
+    * `GET` failure: 404 (Not Found)
+    * `POST` success: 201 (Created)
+    * `DELETE` success: 204 (No Content)
+
+## Things I want to know more about
+Nothing comes to mind at this hour.
