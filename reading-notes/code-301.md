@@ -8,6 +8,7 @@
 6. [Node.js](code-301.md#nodejs)
 7. [REST](code-301.md#rest)
 8. [APIs](code-301.md#apis)
+9. [Functional Programming](code-301.md#functional-programming)
 
 ---
 
@@ -264,3 +265,13 @@ Did you get your API key? yes
 
 ## Things I want to know more about
 Nothing comes to mind at this hour.
+
+---
+
+# Functional Programming
+
+* Functional programming is a style of programming which focuses on using function evaluations as the primary vehicle for computations and avoiding mass mutable state.
+* A pure function returns the same result when given the same data, and it doesn't have any unintended effects on other parts of the program.
+* Testing pure functions is very easy because the input and output is dependable.
+* Immutability means the state of a function does not change at runtime.
+* Referential transparency means the function returns the same information from the same arguments.
