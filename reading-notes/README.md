@@ -32,6 +32,8 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 6. [Node.js](code-301.md#nodejs)
 7. [REST](code-301.md#rest)
 8. [APIs](code-301.md#apis)
+9. [Functional Programming](code-301.md#functional-programming)
+10. [In Memory Storage](code-301.md#in-memory-storage)
 
 ---
 
