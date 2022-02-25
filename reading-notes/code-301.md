@@ -9,6 +9,7 @@
 7. [REST](code-301.md#rest)
 8. [APIs](code-301.md#apis)
 9. [Functional Programming](code-301.md#functional-programming)
+10. [In Memory Storage](code-301.md#in-memory-storage)
 
 ---
 
@@ -275,3 +276,27 @@ Nothing comes to mind at this hour.
 * Testing pure functions is very easy because the input and output is dependable.
 * Immutability means the state of a function does not change at runtime.
 * Referential transparency means the function returns the same information from the same arguments.
+
+---
+
+# In Memory Storage
+
+## Understanding the JavaScript Call Stack
+
+* A 'call' usually refers to a function call.
+* Only one call can happen at once
+* LIFO - Last in, first out
+![The call stack](callstack.png)
+* The stack has a finite size. If the number of function calls exceed the limit (such as in a recursive function with no exit point), it is called a "stack overflow"
+
+## JavaScript Error Messages
+
+* `reference error` - when trying to use a variable that has not beend declared within the current scope
+* `syntax error` - when using improper JS syntax that isn't fixed by JS behind the scenes magic
+* `range error` - when attempting to access an index of an enumerated collection that is outside the bounds of the enumeration
+* `type error` - when a type is expected other than the type provided, usually with respect to variables and function returns
+* Breakpoints are used to temporarily suspend execution of a program at a specific line of code for debugging purposes.
+* `debugger` statements can be used with breakpoints to reveal additional information about the program as it is executing.
+
+## Things I want to know more about
+* This was the first time I've hear of heaps in respect to JS--I hadn't noticed heaps in the documentation prior to now.
