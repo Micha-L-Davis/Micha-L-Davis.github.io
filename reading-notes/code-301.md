@@ -10,6 +10,7 @@
 8. [APIs](code-301.md#apis)
 9. [Functional Programming](code-301.md#functional-programming)
 10. [In Memory Storage](code-301.md#in-memory-storage)
+11. [Mongo and Mongoose](code-301.md#mongo-and-mongoose)
 
 ---
 
@@ -300,3 +301,43 @@ Nothing comes to mind at this hour.
 
 ## Things I want to know more about
 * This was the first time I've hear of heaps in respect to JS--I hadn't noticed heaps in the documentation prior to now.
+
+---
+
+# Mongo and Mongoose
+
+## SQL vs NoSQL
+
+```
+    SQL     |     NoSQL  
+------------------------------
+Relational  | Non-realtional
+------------------------------
+Table-based | Document-based 
+            | key-value pairs
+------------------------------
+Predefined  | Dynamic schema
+schema      | 
+------------------------------
+Vertically  | Horizontally
+scalable    | scalable
+------------------------------
+Uses SQL    | Uses UnQL
+------------------------------
+
+* SQL is a good fit for environments where complex queries are frequent.
+    * Examples: MySql, Oracle, Sqlite, Postgres and MS-SQL.
+* NoSQL is a good fit for hieratchical data storage and large data sets.
+    * Examples: MongoDB, BigTable, Redis, RavenDb, Cassandra, Hbase, Neo4j and CouchDb
+    
+* SQL - Structured Query Language
+* A relational database is a databse that uses tables and fields.
+* The schema is the ordering of data in the table.
+* NoSQL - uses key-value pairs in order to store data
+* NoSQL databases work by creating collections of documents
+* Inside a Mongo databse is no or very few relations
+* NoSQL is more flexible because you do not have to apply a schema to the whole collection
+* One disadvantage of NoSQL is it loses it's performance when dealing with lots of queries to one collection
+
+## Things I want to know more about
+* How does Mongoose figure into this?  It wasn't mentioned.
