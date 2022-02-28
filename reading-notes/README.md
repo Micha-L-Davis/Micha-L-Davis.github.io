@@ -34,6 +34,7 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 8. [APIs](code-301.md#apis)
 9. [Functional Programming](code-301.md#functional-programming)
 10. [In Memory Storage](code-301.md#in-memory-storage)
+11. [Mongo and Mongoose](code-301.md#mongo-and-mongoose)
 
 ---
 
