@@ -324,7 +324,7 @@ scalable    | scalable
 ------------------------------
 Uses SQL    | Uses UnQL
 ------------------------------
-
+```
 * SQL is a good fit for environments where complex queries are frequent.
     * Examples: MySql, Oracle, Sqlite, Postgres and MS-SQL.
 * NoSQL is a good fit for hieratchical data storage and large data sets.
