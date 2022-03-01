@@ -40,4 +40,3 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 ---
 
 ## Code 401 - Advanced Software Development
-
