@@ -11,6 +11,7 @@
 9. [Functional Programming](code-301.md#functional-programming)
 10. [In Memory Storage](code-301.md#in-memory-storage)
 11. [Mongo and Mongoose](code-301.md#mongo-and-mongoose)
+12. [CRUD](code-301.md#crud)
 
 ---
 
@@ -341,3 +342,32 @@ Uses SQL    | Uses UnQL
 
 ## Things I want to know more about
 * How does Mongoose figure into this?  It wasn't mentioned.
+
+---
+
+# CRUD
+
+## Status Codes Based on REST Methods
+
+* 100's = Information
+* 200's = Success
+* 300's = Redirection
+* 400's = Client error
+* 500's = Server error
+
+Specific codes:
+* 202 = Accepted - used with async to confirm the operation has begun
+* 308 = Permanent Redirect - used when a resource has moved to a new URL
+* 204 = No Content -  used when a update doesn't return data to the client
+* 410 = Gone - used when a resource used to exist, but no longer does
+* 403 = Forbidden - used when an otherwise authorized client tries to access a space for which they do not have permission
+
+## Build a REST API with Node.js, Express & MongoDB
+* Because the MongoDB database string contains our password, it must be placed in the .env
+* Middleware is additional software used to perform a specific task
+* /:id in a route means the route name is a parameter accessible from `request.params.id`
+* `PUT` will push a complete update to the data and `PATCH` will allow a partial update to the data.
+* To make a default value in a schema using the `default` object property.
+* Error 500 means a server error has occurred
+
+---
