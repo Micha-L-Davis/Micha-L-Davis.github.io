@@ -12,6 +12,7 @@
 10. [In Memory Storage](code-301.md#in-memory-storage)
 11. [Mongo and Mongoose](code-301.md#mongo-and-mongoose)
 12. [CRUD](code-301.md#crud)
+13. [Diversity and Inclusion in the Tech Industry](code-301.md#diversity-and-inclusion-in-the-tech-industry)
 
 ---
 
@@ -371,3 +372,25 @@ Specific codes:
 * Error 500 means a server error has occurred
 
 ---
+
+# Diversity and Inclusion in the Tech Industry
+
+* Around the same time when there was a decline in women in the tech industry, personal computers were just beginning to appear in US homes. Advertising began targeting boys for computer sales.
+* Because of this early exposure (and advertising reinforcement), boys had potentially thousands of hours of practice using and programming computers by the time they reached adulthood. This had a snowball effect on the gender gap in tech.
+* When looking at this [diversity in tech](https://informationisbeautiful.net/visualizations/diversity-in-tech/) data we can see:
+    * From 20014 to 2017 there has been little change in the demogrphic composition of the tech industry
+    * Only 44% of the tech workers in the top 50 US companies are women. 
+    * 78% of tech workers in the top 50 US companies are white.
+* Diversity efforts are most successful when [they're driven by commitment from company leaders](https://www.usatoday.com/story/tech/columnist/2015/07/21/why-diversity-matters-your-tech-company/30419871/).
+* Diverse teams perform better because
+    * They are smarter and more creative.
+    * Companies without diverse hiring practices miss out on potential talent
+    * Diverse companies can better serve a diverse user base (e.g. "When YouTube’s almost entirely right-handed developer team built the iOS app without considering how left-handed people would use it, for example, 5% to 10% of videos were uploaded upside down as a result.")
+
+---
+
+## Things I want to know more about
+
+How is the state of LGBTQI people in tech? What social factors influence us in this field?
+
+
