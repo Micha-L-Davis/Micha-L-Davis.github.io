@@ -13,6 +13,7 @@
 11. [Mongo and Mongoose](code-301.md#mongo-and-mongoose)
 12. [CRUD](code-301.md#crud)
 13. [Diversity and Inclusion in the Tech Industry](code-301.md#diversity-and-inclusion-in-the-tech-industry)
+14. [Authentication](code-301.md#authentication)
 
 ---
 
@@ -393,4 +394,37 @@ Specific codes:
 
 How is the state of LGBTQI people in tech? What social factors influence us in this field?
 
+---
 
+# Authentication
+
+## What is OAuth?
+
+* OAuth is an open-standard authorization protocol that offers [secure, third-party, user-agent, delegated authorization](https://www.csoonline.com/article/3216404/what-is-oauth-how-the-open-authorization-framework-works.html)
+* One example could be a user emailing files stored on the cloud to another user.   Assuming both services support OAuth, then the authentication can happen behind the curtain without a second login.
+* [How OAuth works](https://www.csoonline.com/article/3216404/what-is-oauth-how-the-open-authorization-framework-works.html):
+    1. The first website connects to the second website on behalf of the user, using OAuth
+    2. The second site generates a one-time token and a one-time secret unique to the transaction.
+    3. The first site gives this token and secret to the initiating user’s client software.
+    4. The client’s software presents the request token and secret to their authorization provider.
+    5. The client is asked to approve the authorization transaction to the second website.
+    6. The user approves a particular transaction type at the first website.
+    7. The user is given an approved access token.
+    8. The user gives the approved access token to the first website.
+    9. The first website gives the access token to the second website as proof of authentication on behalf of the user.
+    10. The second website lets the first website access their site on behalf of the user.
+* ["OpenID is for humans logging into machines, OAuth is for machines logging into machines on behalf of humans."](https://stackoverflow.com/questions/4230821/if-openid-is-dead-what-is-out-there-to-take-its-place/4230970#4230970)
+
+# Authorization and Authentication Flows
+* Authentication: verifies a user's identity. Authorization: verifies what a user can access.
+* Authorization Code Flow:
+![Authorization Code Flow Diagram](https://images.ctfassets.net/cdy7uua7fh8z/2nbNztohyR7uMcZmnUt0VU/2c017d2a2a2cdd80f097554d33ff72dd/auth-sequence-auth-code.png)
+* The PKCE-enhanced Authorization Code Flow allows the calling application to create a Code Verifier that is then verified by the authorization server while protecting that code from malicious attackers.
+* Implicit Flow with Form Post:
+![Implicit Flow with Form Post](https://images.ctfassets.net/cdy7uua7fh8z/6m0uE4E7Hpzbdhyh9dEuYK/e36c910ff47a7540bf27e23c02822624/auth-sequence-implicit-form-post.png)
+* Client Credentials Flow:
+![Client Credentials Flow](https://images.ctfassets.net/cdy7uua7fh8z/2waLvaQdM5Fl5ZN5xUrF2F/8c5ddae68ac8dd438cdeb91fe1010fd1/auth-sequence-client-credentials.png)
+* Device Authorization Flow:
+![Device Authorization Flow](https://images.ctfassets.net/cdy7uua7fh8z/1A6jpG3W1H6SC9ZK92NyKd/40af53209f90a7c392f621f329fb4424/auth-sequence-device-auth.png)
+* Resource Owner Password Flow:
+![Resource Owner Password Flow](https://images.ctfassets.net/cdy7uua7fh8z/4EeYNcnVX1RFcTy5z4lP4v/c3e4d22e6f8bf558caf07338a7388097/ROP_Grant.png)
