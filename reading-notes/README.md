@@ -37,6 +37,7 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 11. [Mongo and Mongoose](code-301.md#mongo-and-mongoose)
 12. [CRUD](code-301.md#crud)
 13. [Diversity and Inclusion in the Tech Industry](code-301.md#diversity-and-inclusion-in-the-tech-industry)
+14. [Authentication](code-301.md#authentication)
 
 ---
 
