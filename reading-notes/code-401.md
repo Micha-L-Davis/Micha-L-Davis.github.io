@@ -22,5 +22,6 @@ The method of querying, creating, modifying and deleting elements of a relationa
 <img src="exercise16.png" width="200">
 <img src="exercise17.png" width="200">
 <img src="exercise18.png" width="200">
+
 ---
 
