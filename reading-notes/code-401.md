@@ -1,6 +1,7 @@
 # Code 301 Reading Notes
 
 1. [Introduction to SQL](code-401.md#introduction-to-sql)
+2. [Practice in the Terminal(code-401.md#practice-in-the-terminal)
 
 ---
 
@@ -25,3 +26,8 @@ The method of querying, creating, modifying and deleting elements of a relationa
 
 ---
 
+# Practice in the Terminal
+
+The [Bash tutorials](https://ryanstutorials.net/linuxtutorial/) were a good refresher on useful commands for the terminal. I've been using Linux/Unix and Bash on and off for much of my professional career, and before that the first operating system I'd ever used was command-line DOS. So I feel pretty comfortable overall using the terminal to crawl through file and directory trees and do what I need to do.  One thing I noticed that I don't think I've ever had occasion to use is `CTRL + Z`, which I wonder if it might be useful when I want to use the CLI while I'm hosting a server from a terminal rather than killing the server session with `CTRL + C` and then restarting it after I do whatever it is I needed to do.
+
+Also, I appreciate that there's a way to handle spaces in file names but... why would you? Sounds like an invitation to disaster if you ask me.
