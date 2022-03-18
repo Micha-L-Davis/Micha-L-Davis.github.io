@@ -42,3 +42,5 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 ---
 
 ## Code 401 - Advanced Software Development
+
+1. [Introduction to SQL](code-401.md#introduction-to-sql)
