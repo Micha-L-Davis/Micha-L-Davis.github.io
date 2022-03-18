@@ -1,4 +1,4 @@
-# Code 301 Reading Notes
+# Code 401 Reading Notes
 
 1. [Introduction to SQL](code-401.md#introduction-to-sql)
 2. [Practice in the Terminal](code-401.md#practice-in-the-terminal)
