@@ -10,17 +10,17 @@ In general, relational databases organize data into column-major tables.  These 
 
 The method of querying, creating, modifying and deleting elements of a relational database or its data is SQL, a language that uses plain and simple language to construct potentially complex queries without a heap of technical knowledge.
 
-![](exercise1.png)
-![](exercise2.png)
-![](exercise3.png)
-![](exercise4.png)
-![](exercise5.png)
-![](exercise6.png)
-![](exercise13.png)
-![](exercise14.png)
-![](exercise15.png)
-![](exercise16.png)
-![](exercise17.png)
-![](exercise18.png)
+<img src="exercise1.png" width="200">
+<img src="exercise2.png" width="200">
+<img src="exercise3.png" width="200">
+<img src="exercise4.png" width="200">
+<img src="exercise5.png" width="200">
+<img src="exercise6.png" width="200">
+<img src="exercise13.png" width="200">
+<img src="exercise14.png" width="200">
+<img src="exercise15.png" width="200">
+<img src="exercise16.png" width="200">
+<img src="exercise17.png" width="200">
+<img src="exercise18.png" width="200">
 ---
 
