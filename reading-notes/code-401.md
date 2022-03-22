@@ -3,7 +3,7 @@
 1. [Introduction to SQL](code-401.md#introduction-to-sql)
 2. [Practice in the Terminal](code-401.md#practice-in-the-terminal)
 3. [Get Ready for 401](code-401.md#get-ready-for-401)
-4. [Node Ecosystem, TDD, CI/CD](code-401.md#node-ecosystem-tdd-ci-cd)
+4. [Node Ecosystem, TDD, CI/CD](code-401.md#node-ecosystem-tdd-cicd)
 
 ---
 
