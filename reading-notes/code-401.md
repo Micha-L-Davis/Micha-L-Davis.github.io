@@ -3,6 +3,7 @@
 1. [Introduction to SQL](code-401.md#introduction-to-sql)
 2. [Practice in the Terminal](code-401.md#practice-in-the-terminal)
 3. [Get Ready for 401](code-401.md#get-ready-for-401)
+4. [Node Ecosystem, TDD, CI/CD](code-401.md#node-ecosystem-tdd-ci-cd)
 
 ---
 
@@ -82,3 +83,43 @@ The event loop is a system that maintains a queue of asynchronous callback funct
 ## The Super Mario Effect
 
 The Super Mario Effect refers to the gamification of complicated tasks to enhance learning and retention.  The eponymous example, Super Mario, ultimately boils down to pressing a series of buttons in an exact sequence at the appropriate time--stripped of all other context, this task sounds mind-numbingly boring. But, dressed up as a game with colorful cartoon graphics and loads of positive reinforcement the task becomes highly engaging and the skills are easier to retain.  The presenter demonstrates that this approach to learning can make a large difference in a person's willingness to re-attempt a task after a failure.
+
+---
+
+# Node Ecosystem, TDD, CI/CD
+
+## Review, Research, and Discussion
+
+### `Array.map()`
+
+This method iterates over the elements of the source array, applies a callback function to each element, and then returns a new array of the resulting elements. The method can accept two optional parameters: one to reference the integer index of the current iteration, and one to reference the source array.
+
+### `Array.reduce()`
+
+This method iterates over the elements of the source array, applies a callback function to each element that alters the value of an 'accumulator' variable based on the result of logical statements within the callback function, and returns a single value (that of the accumulator). The method can accept as an optional parameter an initial value for the accumulator (e.g. an empty object `{}` or the number `0`). If this optional parameter is left undefined, the accumulator will be assigned the value of the first element in the source array.
+
+### `superagent()`
+
+The superagent plugin provides asynchronous functions for creating HTTP requests.  To fetch data from a URL and log the result there are two syntaxes:
+
+As a promise:
+```js
+superagent
+  .get(URL)
+  .then(data => console.log(data.body));
+```
+Or with an async function:
+```js
+async function getUrl(url) {
+  let data = await superagent.get(url);
+  console.log(data.body);
+}
+```
+
+### Promises
+
+A Promise is a way to handle asynchronous code, much like `async` and `await`. When a promise is created, it attempts to resolve the asynchronous operation. Once the promise resolves (or is rejected with some status information) a `.then()` method must be in place to supply a callback function on the resolution to fulfill the promise.
+
+### Not All Callback Functions are Asynchronous
+
+A callback function is any function that is passed as an argument to another function with the expectation that the callback will be eventually called within the hosting function. This is not always an asynchronous operation--but all asynchronous operations use callback functions in some way, so they are commonly associated with asynchronicity.
