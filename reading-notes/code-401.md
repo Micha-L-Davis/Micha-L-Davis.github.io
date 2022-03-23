@@ -4,6 +4,7 @@
 2. [Practice in the Terminal](code-401.md#practice-in-the-terminal)
 3. [Get Ready for 401](code-401.md#get-ready-for-401)
 4. [Node Ecosystem, TDD, CI/CD](code-401.md#node-ecosystem-tdd-cicd)
+5. [Express](code-401.md#express)
 
 ---
 
@@ -123,3 +124,46 @@ A Promise is a way to handle asynchronous code, much like `async` and `await`. W
 ### Not All Callback Functions are Asynchronous
 
 A callback function is any function that is passed as an argument to another function with the expectation that the callback will be eventually called within the hosting function. This is not always an asynchronous operation--but all asynchronous operations use callback functions in some way, so they are commonly associated with asynchronicity.
+
+---
+
+# Express
+
+## `PUT` vs `PATCH`
+
+`PUT` is used to create a resource or to update an entire resource. `PATCH` is used to partially update a resource.
+
+## Mock API Sites
+
+To test or prototype an API, you can use one of the following sites:
+
+* [Mockend](https://mockend.com/)
+* [Beeceptor](https://beeceptor.com/)
+* [Go REST](https://gorest.co.in/)
+
+## Swagger vs APIDoc.js
+
+Swagger is highly interactive, colorful, and full of features.  It also seems to have a bunch of other tools besides those for documentation. I didn't dive too deep, but it appears to run on its own software platform.  I didn't see an npm package or a cli download anywhere.
+
+APIDoc.js appears to be filling its niche; rather than the massive network of integrated tools it's just a simple package for generating good-looking documentation from your code. The documentation produced doesn't have all the interactive frills, either--though there could be options for that sort of thing, nothing like it was shown in the demo. It looks like this package runs entirely from the command line.
+
+## Status Codes:
+
+* 100’s = Information
+* 200’s = Success
+* 300’s = Redirection
+* 400’s = Client error
+* 500’s = Server error
+
+## SOAP vs REST
+
+The major difference between these two acronyms is that one (REST) is an architectural guide for systems that communicate and the other (SOAP) is a protocol for communication. 
+
+REST is a set of overarching principles for web API architecture. It dictates a standardized form of resource transfer between clients and servers, but is flexible about the form of the data itself. SOAP is far less rigid, requiring XML formatted data. It is also slower, and does not have the ability to access the browser cache.
+
+## Vocabulary Terms
+
+* Web Server - a computer that maintains a consistent connection to the web and is configured to receive and process communications from/to client computers.
+* Express - A popular Node web framework that handles HTTP requests and processes middleware between requests for information and the following response.
+* Routing - The act of directing the flow of information using URL paths.
+* WRRC - The Web Request Response Cycle is a model for how client/server communications are handled (via 'requests' and 'responses')
