@@ -5,6 +5,7 @@
 3. [Get Ready for 401](code-401.md#get-ready-for-401)
 4. [Node Ecosystem, TDD, CI/CD](code-401.md#node-ecosystem-tdd-cicd)
 5. [Express](code-401.md#express)
+6. [Express REST API](code-401.md#express-rest-api)
 
 ---
 
@@ -167,3 +168,39 @@ REST is a set of overarching principles for web API architecture. It dictates a 
 * Express - A popular Node web framework that handles HTTP requests and processes middleware between requests for information and the following response.
 * Routing - The act of directing the flow of information using URL paths.
 * WRRC - The Web Request Response Cycle is a model for how client/server communications are handled (via 'requests' and 'responses')
+
+---
+
+# Express REST API
+
+## Review: ES6 Classes
+
+Classes are a clean and efficient way of bringing object-oriented programming into JavaScript. They mimic the function of adding methods and properties to an object prototype. 
+
+## Using Express Routing
+
+Routing is the means by which an application recieves client requests for information.  Basic routing in Express is accomplished by accessing the Express instance's routing methods, which correspond to the RESTful verbs used by modern APIs (`GET` and `get()`, etc...). Below is one example of such a route:
+
+```js
+const express = require('express')
+const app = express()
+
+// respond with "hello world" when a GET request is made to the homepage
+app.get('/', (req, res) => {
+  res.send('hello world')
+})
+```
+<sup>Source: https://expressjs.com/en/guide/routing.html</sup>
+
+## Express Router
+
+Another way to designate a route is to use the Express router.  See below example:
+
+```js
+var router = express.Router();
+
+router.get('/', function(req, res) {
+  res.send('im the home page!');
+});
+```
+<sup>Source: https://www.digitalocean.com/community/tutorials/learn-to-use-the-new-router-in-expressjs-4</sup>
