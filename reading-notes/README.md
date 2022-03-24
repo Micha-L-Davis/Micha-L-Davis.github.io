@@ -48,4 +48,4 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 3. [Get Ready for 401](code-401.md#get-ready-for-401)
 4. [Node Ecosystem, TDD, CI/CD](code-401.md#node-ecosystem-tdd-cicd)
 5. [Express](code-401.md#express)
-6. [Express Rest API](code-401.md#express-rest-api)
+6. [Express REST API](code-401.md#express-rest-api)
