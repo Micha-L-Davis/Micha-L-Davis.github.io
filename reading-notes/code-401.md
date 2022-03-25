@@ -6,6 +6,7 @@
 4. [Node Ecosystem, TDD, CI/CD](code-401.md#node-ecosystem-tdd-cicd)
 5. [Express](code-401.md#express)
 6. [Express REST API](code-401.md#express-rest-api)
+7. [Data Modeling](code-401.md#data-modeling)
 
 ---
 
@@ -204,3 +205,53 @@ router.get('/', function(req, res) {
 });
 ```
 <sup>Source: https://www.digitalocean.com/community/tutorials/learn-to-use-the-new-router-in-expressjs-4</sup>
+
+---
+
+# Data Modeling
+
+## NOSQL vs SQL
+
+```
+    SQL     |     NoSQL  
+------------------------------
+Relational  | Non-relational
+------------------------------
+Table-based | Document-based 
+            | key-value pairs
+------------------------------
+Predefined  | Dynamic schema
+schema      | 
+------------------------------
+Vertically  | Horizontally
+scalable    | scalable
+------------------------------
+Uses SQL    | Uses UnQL
+------------------------------
+```
+* SQL is a good fit for environments where complex queries are frequent.
+    * Examples: MySql, Oracle, Sqlite, Postgres and MS-SQL.
+* NoSQL is a good fit for hierarchical data storage and large data sets.
+    * Examples: MongoDB, BigTable, Redis, RavenDb, Cassandra, Hbase, Neo4j and CouchDb
+    
+* SQL - Structured Query Language
+* A relational database is a database that uses tables and fields.
+* The schema is the ordering of data in the table.
+* NoSQL - uses key-value pairs in order to store data
+* NoSQL databases work by creating collections of documents
+* Inside a Mongo database is no or very few relations
+* NoSQL is more flexible because you do not have to apply a schema to the whole collection
+* One disadvantage of NoSQL is it loses it's performance when dealing with lots of queries to one collection
+
+## SQL Data Modeling Techniques
+
+In [this article] the author shows a few ways to model representational databases.  The simple model looks like this:
+
+![simple data model](Database-Table-Data-Modeling.png)
+And a more complex relationship can be seen here:
+
+![relational data model](DataModel-Relations1.png)
+
+These models show all the key parts of an SQL data model and the relationships between tables.  Note the "many-to-one" indicator.
+
+---
