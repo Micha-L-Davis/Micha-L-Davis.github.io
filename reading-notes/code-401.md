@@ -7,6 +7,7 @@
 5. [Express](code-401.md#express)
 6. [Express REST API](code-401.md#express-rest-api)
 7. [Data Modeling](code-401.md#data-modeling)
+8. [Authentication](code-401.md#authentication)
 
 ---
 
@@ -255,3 +256,5 @@ And a more complex relationship can be seen here:
 These models show all the key parts of an SQL data model and the relationships between tables.  Note the "many-to-one" indicator.
 
 ---
+
+# Authentication
