@@ -258,3 +258,15 @@ These models show all the key parts of an SQL data model and the relationships b
 ---
 
 # Authentication
+
+## Securing Passwords with Bcrypt Hashing
+
+Cryptographic hashing is a way of encrypting plain-text passwords into long strings of seemingly random characters. This provides good protection for a user's password, because if the server is compromised the attackers only get the hash, not the full password.  This encryption is not foolproof, but it does present a hurdle to a would-be hacker.
+
+To enhance security, we can add BCrypt, which uses a technique called Key Stretching to make the hash extremely resistant to brute force attacks.
+
+## Basic Auth
+
+The simplest form of authetication is called basic access authentication.  This method does not require cookies, session identifies, login pages, etc. All information for authentication can be sent via the HTTP header.  This is not perfect security--the credentials are encoded with Base64, but not encripted. For this reason, HTTPS is often used alongside basic auth to add additional security.
+
+---
