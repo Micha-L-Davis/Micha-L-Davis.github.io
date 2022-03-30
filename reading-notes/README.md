@@ -51,3 +51,4 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 6. [Express REST API](code-401.md#express-rest-api)
 7. [Data Modeling](code-401.md#data-modeling)
 8. [Authentication](code-401.md#authentication)
+9. [Bearer Authorization](code-401.md#bearer-authorization)
