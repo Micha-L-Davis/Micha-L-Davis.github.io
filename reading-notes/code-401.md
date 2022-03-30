@@ -8,6 +8,7 @@
 6. [Express REST API](code-401.md#express-rest-api)
 7. [Data Modeling](code-401.md#data-modeling)
 8. [Authentication](code-401.md#authentication)
+9. [Bearer Authorization](code-401.md#bearer-authorization)
 
 ---
 
@@ -270,3 +271,26 @@ To enhance security, we can add BCrypt, which uses a technique called Key Stretc
 The simplest form of authetication is called basic access authentication.  This method does not require cookies, session identifies, login pages, etc. All information for authentication can be sent via the HTTP header.  This is not perfect security--the credentials are encoded with Base64, but not encripted. For this reason, HTTPS is often used alongside basic auth to add additional security.
 
 ---
+
+# Bearer Authorization
+
+## What is JSON Web Token (JWT)?
+
+JWT is a compact open standard to securely transfer information between any two bodies. The token is 'digitally signed' to ensure information transferred is verified. It can be transmitted quickly and used easily. The token contains the user's information meaning the database only needs to be queried once and then the token can be used to verify the user's authorized access.
+
+The JWT comes in three parts: a header, the payload, and the signature.
+  * The header includes information about the algorithm used to encode the token.
+  * The payload contains the data to be transferred.
+  * The signature contains the data of both the header and the payload plus a 'secret.' This section ensures that the data in the payload can be verified and trusted.
+
+## How does JWT Work?
+
+![JWT Use Diagram](client-credentials-grant.png)
+<sup> Source: https://jwt.io/introduction/ </sup>
+
+1. The application or client requests authorization to the authorization server. 
+2. When the authorization is granted, the authorization server returns an access token to the application.
+3. The application uses the access token to access a protected resource (like an API).
+
+---
+
