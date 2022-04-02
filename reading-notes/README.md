@@ -52,3 +52,4 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 7. [Data Modeling](code-401.md#data-modeling)
 8. [Authentication](code-401.md#authentication)
 9. [Bearer Authorization](code-401.md#bearer-authorization)
+10. [Stacks and Queues](code-401.md#stacks-and-queues)
