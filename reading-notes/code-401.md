@@ -305,4 +305,4 @@ A stack is a type of singly linked list where the nodes are ONLY added or remove
 
 A queue is a type of singly linked list where the nodes are ONLY added to the rear of the list and removed from the front of the list. Queues have extra methods designed to accomplish this: `enqueue()` to add and `dequeue()` to remove, and `peek()` to look at the front value without removing it. Because of this specific usage, the Queue is known as a 'first-in/first-out' data structure. A common example of a queue is the event queue.
 
-<img src="Stack-and-Queue-Insertion.png" width="300"><img src="Stack-and-Queue-Extraction.png" width="300">
+<img src="Stack-and-Queue-Insertion.png" width="610"><img src="Stack-and-Queue-Extraction.png" width="600">
