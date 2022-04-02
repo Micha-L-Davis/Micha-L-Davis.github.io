@@ -9,6 +9,7 @@
 7. [Data Modeling](code-401.md#data-modeling)
 8. [Authentication](code-401.md#authentication)
 9. [Bearer Authorization](code-401.md#bearer-authorization)
+10. [Stacks and Queues](code-401.md#stacks-and-queues)
 
 ---
 
@@ -294,3 +295,12 @@ The JWT comes in three parts: a header, the payload, and the signature.
 
 ---
 
+# Stacks and Queues
+
+## Stack
+
+A stack is a type of singly linked list where the nodes are ONLY added or removed to/from the front of the list. Stacks have extra methods designed to accomplish this: `push()` to add and `pop()` to remove and `peek()` to look at the top value without removing it. Because of this specific usage, the Stack is known as a 'first-in/last-out' data structure.  A common example of a stack is the 'call stack.'
+
+## Queue
+
+A queue is a type of singly linked list where the nodes are ONLY added to the rear of the list and removed from the front of the list. Queues have extra methods designed to accomplish this: `enqueue()` to add and `dequeue()` to remove, and `peek()` to look at the front value without removing it. Because of this specific usage, the Queue is known as a 'first-in/first-out' data structure. A common example of a queue is the event queue.
