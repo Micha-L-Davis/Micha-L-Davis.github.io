@@ -10,6 +10,7 @@
 8. [Authentication](code-401.md#authentication)
 9. [Bearer Authorization](code-401.md#bearer-authorization)
 10. [Stacks and Queues](code-401.md#stacks-and-queues)
+11. [Event Driven Applications](code-401.md#event-driven-applications)
 
 ---
 
@@ -306,3 +307,14 @@ A stack is a type of singly linked list where the nodes are ONLY added or remove
 A queue is a type of singly linked list where the nodes are ONLY added to the rear of the list and removed from the front of the list. Queues have extra methods designed to accomplish this: `enqueue()` to add and `dequeue()` to remove, and `peek()` to look at the front value without removing it. Because of this specific usage, the Queue is known as a 'first-in/first-out' data structure. A common example of a queue is the event queue.
 
 <img src="Stack-and-Queue-Insertion.png" width="600"><img src="Stack-and-Queue-Extraction.png" width="600">
+
+---
+
+# Event Driven Applications
+
+Event driven architecture relies on using the [Observer Design Pattern](https://en.wikipedia.org/wiki/Observer_pattern) to register a list of delegated functions to an event. When the event is invoked, all the listed function calls are also invoked. In this way, a dependency between one and several modules can be inverted, so that all modules involved losely depend on only one other module--the event caller. This also helps encapsulate functionality more concretely as per the [Single-Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). In an event-driven system each module controls its own behavior in response to an event, rather than allowing other modules to control its behavior by importing its functions.
+
+Events in Node.js use the [EventEmitter module](https://nodejs.org/api/events.html), which is an included feature module of Node.
+
+---
+
