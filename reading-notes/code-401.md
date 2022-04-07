@@ -11,6 +11,8 @@
 9. [Bearer Authorization](code-401.md#bearer-authorization)
 10. [Stacks and Queues](code-401.md#stacks-and-queues)
 11. [Event Driven Applications](code-401.md#event-driven-applications)
+12. [Socket.io](code-401.md#socketio)
+13. [Message Queues](code-401.md#message-queues)
 
 ---
 
@@ -315,6 +317,128 @@ A queue is a type of singly linked list where the nodes are ONLY added to the re
 Event driven architecture relies on using the [Observer Design Pattern](https://en.wikipedia.org/wiki/Observer_pattern) to register a list of delegated functions to an event. When the event is invoked, all the listed function calls are also invoked. In this way, a dependency between one and several modules can be inverted, so that all modules involved losely depend on only one other module--the event caller. This also helps encapsulate functionality more concretely as per the [Single-Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). In an event-driven system each module controls its own behavior in response to an event, rather than allowing other modules to control its behavior by importing its functions.
 
 Events in Node.js use the [EventEmitter module](https://nodejs.org/api/events.html), which is an included feature module of Node.
+
+---
+
+# Socket.io
+
+## WebSocket
+
+According to [Wikipedia](https://en.wikipedia.org/wiki/WebSocket), WebSocket is a communications protocol which provides full-duplex communication over a single TCP connection. This allows for web clients to communicate with a server in real-time, sending and receiving information simultaneously.
+
+## Socket.io
+
+Socket.io is a socket-based event library that is built on top of the WebSockerts API and Node.js. It consists of separate server-side and client-side libraries. These libraries make it possible to broadcast to many sockets at one time easily.
+
+## OSI Model
+
+The OSI Model is a model for the standardization of the communication between computers on a network.  There are seven layers to the model:
+
+* Application: Network applications (web browser: HTTP, HTTPs, FTP, etc...)
+* Presentation: translates, compresses, and encrypts/decrypts information from the application layer into computer readable code
+* Session: Handles setting up and maintaining of connections. APIs, authentication, authorization, data transfers happen on this layer.
+* Transport: Controls the reliabilability of communication via segmentation, flow control, and error control. It also handles connection oriented transmission (TCP), and connectionless transmission (UDP)
+* Network: Handles routing, logical addressing, and path determination.
+* Data Link: Pysical addressing is done at this layer via MAC addresses. This occurs in software on the network interface card.
+* Physical: the individual physical bits of information in a given media.    
+
+Each layer is a bundle of the protocols necessary to make applications work in the network.
+
+## TCP 3-Way Handshake
+
+TCP uses a 3-way handshake to establish a connection.
+
+1. The client requests synchronization and connection.
+2. The server acknowledges the synchronization and requests its own connection.
+3. The client acknowledges the connection.
+
+---
+
+# Message Queues
+
+## Socket.io Chat Application
+
+A [simple chat application](https://socket.io/get-started/chat/) can be made with Node.JS, Express, and Socket.io.
+
+index.js
+```node
+const express = require('express');
+const app = express();
+const http = require('http');
+const server = http.createServer(app);
+const { Server } = require("socket.io");
+const io = new Server(server);
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
+
+io.on('connection', (socket) => {
+  console.log('a user connected');
+  socket.on('disconnect', () => {
+    console.log('user disconnected');
+  });
+  socket.on('chat message', (msg) => {
+    io.emit('chat message', msg);
+  });
+});
+
+server.listen(3000, () => {
+  console.log('listening on *:3000');
+});
+```
+
+index.html
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+      body { margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+      #form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+      #input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
+      #input:focus { outline: none; }
+      #form > button { background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
+
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages > li { padding: 0.5rem 1rem; }
+      #messages > li:nth-child(odd) { background: #efefef; }
+    </style>
+  </head>
+  <body>
+    <ul id="messages"></ul>
+    <form id="form" action="">
+      <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+
+  var messages = document.getElementById('messages');
+  var form = document.getElementById('form');
+  var input = document.getElementById('input');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (input.value) {
+      socket.emit('chat message', input.value);
+      input.value = '';
+    }
+  });
+
+  socket.on('chat message', function(msg) {
+    var item = document.createElement('li');
+    item.textContent = msg;
+    messages.appendChild(item);
+    window.scrollTo(0, document.body.scrollHeight);
+  });
+</script>
+  </body>
+</html>
+```
 
 ---
 
