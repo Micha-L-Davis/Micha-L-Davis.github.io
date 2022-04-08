@@ -13,6 +13,7 @@
 11. [Event Driven Applications](code-401.md#event-driven-applications)
 12. [Socket.io](code-401.md#socketio)
 13. [Message Queues](code-401.md#message-queues)
+14. [Event Driven Architecture](code-401.md#event-driven-architecture)
 
 ---
 
@@ -441,4 +442,20 @@ index.html
 ```
 
 ---
+
+# Event Driven Architecture
+
+## AWS: When to use SNS or SQS
+
+* SNS: Simple notification service
+  * uses a publisher/subscriber system. 
+  * Publishing can be delivered to many subscribers of different types.
+  * Used when other systems care about the event.
+* SQS: Simple queue service, queueuing service for message processing. 
+  * The system must poll the queue to discover new events.
+  * Messages in the queue are processed by a single customer.
+  * Used when your system cares aboute an event.
+
+---
+
 
