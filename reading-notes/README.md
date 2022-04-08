@@ -56,3 +56,4 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 11. [Event Driven Applications](code-401.md#event-driven-applications)
 12. [Socket.io](code-401.md#socketio)
 13. [Message Queues](code-401.md#message-queues)
+14. [Event Driven Architecture](code-401.md#event-driven-architecture)
