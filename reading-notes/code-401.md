@@ -14,6 +14,7 @@
 12. [Socket.io](code-401.md#socketio)
 13. [Message Queues](code-401.md#message-queues)
 14. [Event Driven Architecture](code-401.md#event-driven-architecture)
+15. [Trees](code-401.md#trees)
 
 ---
 
@@ -455,6 +456,28 @@ index.html
   * The system must poll the queue to discover new events.
   * Messages in the queue are processed by a single customer.
   * Used when your system cares aboute an event.
+
+---
+
+# Trees
+
+A tree is a data structure which stores values in nodes.  Each node has between 0 and (depending on the type of tree) potentially infinite child nodes. These parent/child relationships form a hierarchy, with one node that has no parent node (known as the  `root`) serving as the starting point for traversing the structure. Nodes which have a parent but no children are known as `leaves`.
+
+## Traversal
+There are two methods of tree traversal.
+
+* Depth-First Traversal - in this method, the tree is read by first traversing to a leaf and then back up to the next higher branching before returning to any connected leaves, and so on up the tree until all leaves and branches have been traversed. The ordering of the read can be done in one of several ways, producing different results (though all nodes are visited in any read method). No matter the ordering, these methods are all recursive.
+* Breadth-First Traversal - in this method, the tree is read row by row in descending order starting with the root.  Each node on a given level is read from left to right regardless of sibling/parent/child relationships. In this method, a queue is used to hold the references to previous nodes, allowing the traversal to visit all nodes without losing reference to past nodes visited.
+
+## Binary Trees vs K-ary Trees
+
+A binary trees are limited to between zero and two children (usually designated `left` and `right`).\
+
+K-ary trees are limited to between zero and `k` children. While more complicated, the concepts for traversing the k-ary tree breadthwise via a queue is essentially the same.
+
+## Binary Search Trees
+
+These trees are similar to binary trees, but with the added sorting measure: a node's left child value must be a lesser number than the node's value, and it's right child value must be greater. This allows for very fast searching of the tree, since the structure potentially halves the viable search pool with each advance.
 
 ---
 
