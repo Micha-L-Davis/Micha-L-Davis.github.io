@@ -57,3 +57,4 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 12. [Socket.io](code-401.md#socketio)
 13. [Message Queues](code-401.md#message-queues)
 14. [Event Driven Architecture](code-401.md#event-driven-architecture)
+15. [Trees](code-401.md#trees)
