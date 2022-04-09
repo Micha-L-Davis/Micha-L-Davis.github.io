@@ -9,12 +9,13 @@
 7. [Data Modeling](code-401.md#data-modeling)
 8. [Authentication](code-401.md#authentication)
 9. [Bearer Authorization](code-401.md#bearer-authorization)
-10. [Stacks and Queues](code-401.md#stacks-and-queues)
-11. [Event Driven Applications](code-401.md#event-driven-applications)
-12. [Socket.io](code-401.md#socketio)
-13. [Message Queues](code-401.md#message-queues)
-14. [Event Driven Architecture](code-401.md#event-driven-architecture)
-15. [Trees](code-401.md#trees)
+10. [Access Control](code-401.md#access-control)
+11. [Stacks and Queues](code-401.md#stacks-and-queues)
+12. [Event Driven Applications](code-401.md#event-driven-applications)
+13. [Socket.io](code-401.md#socketio)
+14. [Message Queues](code-401.md#message-queues)
+15. [Event Driven Architecture](code-401.md#event-driven-architecture)
+16. [Trees](code-401.md#trees)
 
 ---
 
@@ -297,6 +298,27 @@ The JWT comes in three parts: a header, the payload, and the signature.
 1. The application or client requests authorization to the authorization server. 
 2. When the authorization is granted, the authorization server returns an access token to the application.
 3. The application uses the access token to access a protected resource (like an API).
+
+---
+
+# Access Control
+
+## 5 Steps to Simple Role-Based Access Control
+
+1. Inventory your systems - understand where you need to control access
+2. Analyze your workforce and create roles. Keep them as simple and stratified as possible.
+3. Assign people to roles.
+4. Never make one-off changes.
+5. Audit periodically.
+
+## Role-Based Access Control
+
+Three primary rules are defined for RBAC:
+  1. Role assignment: permission is reserved for those assigned a role.
+  2. Role authorization: to ensure users can only assume a role for which they are authorized.
+  3. Permission authorization: permissions must match those of the authorized role.
+
+Permissions are associated with a role, not a user.
 
 ---
 
