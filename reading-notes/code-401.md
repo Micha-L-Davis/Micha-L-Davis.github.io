@@ -16,6 +16,7 @@
 14. [Message Queues](code-401.md#message-queues)
 15. [Event Driven Architecture](code-401.md#event-driven-architecture)
 16. [Trees](code-401.md#trees)
+17. [AWS: Cloud Servers](code-401.md#awscloud-servers)
 
 ---
 
@@ -503,4 +504,13 @@ These trees are similar to binary trees, but with the added sorting measure: a n
 
 ---
 
+# AWS: Cloud Servers
+
+## AWS EC2
+
+Amazon Elastic Compute Cloud (EC2) is a platform for hosting vitual machines for cloud-native applications. Users can select from a wide array of oeprating systems and VM configurations to tailor their package to their exact needs.  
+
+## Elastic Beanstalk
+
+Elastic Beanstalk (EB) is a tool that handles the creation of virtual machines on EC2. It automates several of the build options, removing some of the set-up steps required to get a VM running and hosting an app. It also offers scaling solutions and load balance]ing for your server, cutting down the maintenence time/effort required to keep a server going. The CLI offers a convenient means to automate this process.
 
