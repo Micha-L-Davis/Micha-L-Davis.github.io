@@ -59,3 +59,4 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 14. [Message Queues](code-401.md#message-queues)
 15. [Event Driven Architecture](code-401.md#event-driven-architecture)
 16. [Trees](code-401.md#trees)
+17. [AWS: Cloud Servers](code-401.md#awscloud-servers)
