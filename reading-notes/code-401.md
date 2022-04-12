@@ -17,6 +17,7 @@
 15. [Event Driven Architecture](code-401.md#event-driven-architecture)
 16. [Trees](code-401.md#trees)
 17. [AWS: Cloud Servers](code-401.md#aws-cloud-servers)
+18. [AWS: S3 and Lambda](code-401.md#aws-s3-and-lambda)
 
 ---
 
@@ -513,4 +514,17 @@ Amazon Elastic Compute Cloud (EC2) is a platform for hosting vitual machines for
 ## Elastic Beanstalk
 
 Elastic Beanstalk (EB) is a tool that handles the creation of virtual machines on EC2. It automates several of the build options, removing some of the set-up steps required to get a VM running and hosting an app. It also offers scaling solutions and load balance]ing for your server, cutting down the maintenence time/effort required to keep a server going. The CLI offers a convenient means to automate this process.
+
+---
+
+# AWS: S3 and Lambda
+
+## AWS S3
+
+Simple Storage Service (S3) is a secure data storage and retrieval system. Data is organized into 'buckets' which can contain 'objects' of data. This service can be used to store and analize large quantities of discrete data obkects, store backups of critical data, archive old data, or add scalability to cloud-native applications.
+
+## AWS Lambda
+
+Lambda is a service for providing 'serverless' computing. Code is stored on the cloud as a function which can be called using event triggers. The function is assigned an allocation of memory and processing power necessary for it to run. Several instances of the same function can be called concurrently, allowing for highly scalable systems that respond to user demand.  Lambda integrates with other AWS services to provide complete support for serverless applications. This service is good for applications where self-contained tasks have a short runtime, and where there is a wide gradient of high and low activity levels on the application.
+
 
