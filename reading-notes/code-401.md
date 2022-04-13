@@ -18,6 +18,7 @@
 16. [Trees](code-401.md#trees)
 17. [AWS: Cloud Servers](code-401.md#aws-cloud-servers)
 18. [AWS: S3 and Lambda](code-401.md#aws-s3-and-lambda)
+19. [AWS: API, Dynamo and Lambda](code-401.md#aws-api-dynamo-and-lambda)
 
 ---
 
@@ -527,4 +528,19 @@ Simple Storage Service (S3) is a secure data storage and retrieval system. Data 
 
 Lambda is a service for providing 'serverless' computing. Code is stored on the cloud as a function which can be called using event triggers. The function is assigned an allocation of memory and processing power necessary for it to run. Several instances of the same function can be called concurrently, allowing for highly scalable systems that respond to user demand.  Lambda integrates with other AWS services to provide complete support for serverless applications. This service is good for applications where self-contained tasks have a short runtime, and where there is a wide gradient of high and low activity levels on the application.
 
+---
+
+# AWS: API, Dynamo and Lambda
+
+## API Gateway
+
+The Amazon API Gateway is a service which allows the definition of REST API endpoints that connect to the appropriate backend route. This enables a serverless API system. The Gateway can interact with other AWS services to manage authentication, authorization, metrics collection, database and serverless logic operations. All together, this service reduces maintenence and setup of servers, but increrases the latency of responses.
+
+## DynamoDB
+
+This is a service hosted and operated by AWS that provides NoSQL databases. As with other AWS services, DynamoDB is functionally the same as other NoSQL database solutions, but it is managed and maintained by AWS. Thus we get the scalability, security, and simplicity of an externally managed service at the cost of control.
+
+## Dynamoose
+
+This is a 3rd party tool for adding Mongoose-inspired modeling to DynamoDB. Developers who are familiar with using Mongoose can use the syntax to which they are accustomed.
 
