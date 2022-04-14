@@ -19,6 +19,7 @@
 17. [AWS: Cloud Servers](code-401.md#aws-cloud-servers)
 18. [AWS: S3 and Lambda](code-401.md#aws-s3-and-lambda)
 19. [AWS: API, Dynamo and Lambda](code-401.md#aws-api-dynamo-and-lambda)
+20. [AWS: Events](code-401.md#aws-events)
 
 ---
 
@@ -543,4 +544,21 @@ This is a service hosted and operated by AWS that provides NoSQL databases. As w
 ## Dynamoose
 
 This is a 3rd party tool for adding Mongoose-inspired modeling to DynamoDB. Developers who are familiar with using Mongoose can use the syntax to which they are accustomed.
+
+---
+
+# AWS: Events
+
+## SQS and SNS Basics
+
+SNS (Simple Notification Service) enables serverless use of the Observer Pattern. Data published to an event 'topic' can be recieved by observing subscribers, such as an email address, a message queue, a Node script, an HTTP endpoint, etc. As with other AWS services, this distributed system lends itself easily toward scalability. SNS should be used when:
+
+* Messages need to be published and consumed in batches.
+* A single message needs to be processed in multiple ways.
+* Message(s) need to go to multiple subscribers.
+
+SQS (Simple Queue Service) queues messages to be delivered to the recipient when the recipient is ready and available to recieve the message.  It can hold on to messages for a set duration of time, track messages that failed to send, and provide many other supporting features useful in a messaging queue.  Messages in an SQS queue are not puished to receivers, but pulled by them. SQS should be used when:
+
+* There is only one subscriber to a message.
+* Two applications need to process information in parallel.
 
