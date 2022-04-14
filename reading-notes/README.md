@@ -62,3 +62,4 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 17. [AWS: Cloud Servers](code-401.md#aws-cloud-servers)
 18. [AWS: S3 and Lambda](code-401.md#aws-s3-and-lambda)
 19. [AWS: API, Dynamo and Lambda](code-401.md#aws-api-dynamo-and-lambda)
+20. [AWS: Events](code-401.md#aws-events)
