@@ -20,6 +20,7 @@
 18. [AWS: S3 and Lambda](code-401.md#aws-s3-and-lambda)
 19. [AWS: API, Dynamo and Lambda](code-401.md#aws-api-dynamo-and-lambda)
 20. [AWS: Events](code-401.md#aws-events)
+21. [Component Based UI](code-401#component-based-ui)
 
 ---
 
@@ -562,3 +563,14 @@ SQS (Simple Queue Service) queues messages to be delivered to the recipient when
 * There is only one subscriber to a message.
 * Two applications need to process information in parallel.
 
+---
+
+# Component Based UI
+
+## React
+
+React is a component-based UI library. It uses a syntax extension to JavaScript called JSX, which includes some HTML-style 'elements.' By blending HTML and JavaScript, React components can more easily satisfy the Separation of Concerns design principle.
+
+Expressions are embedded inside JSX elements using `{`curly braces`}`. Any JavaScript expression can be included this way.
+
+The element is the smallest building block of a React app.  React components are typically made of a group of elements. Elements are rendered in the HTML element where the 'root' id is set. Elements are immutable: once rendered, it cannot be changed.  A new instance must be rendered if a change is desired.
