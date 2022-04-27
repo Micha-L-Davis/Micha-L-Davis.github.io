@@ -21,6 +21,7 @@
 19. [AWS: API, Dynamo and Lambda](code-401.md#aws-api-dynamo-and-lambda)
 20. [AWS: Events](code-401.md#aws-events)
 21. [Component Based UI](code-401#component-based-ui)
+22. [`useState()` Hook](code-401#usestate-hook)
 
 ---
 
@@ -574,3 +575,22 @@ React is a component-based UI library. It uses a syntax extension to JavaScript 
 Expressions are embedded inside JSX elements using `{`curly braces`}`. Any JavaScript expression can be included this way.
 
 The element is the smallest building block of a React app.  React components are typically made of a group of elements. Elements are rendered in the HTML element where the 'root' id is set. Elements are immutable: once rendered, it cannot be changed.  A new instance must be rendered if a change is desired.
+
+---
+
+# `useState()` Hook
+
+## Making Sense of Hooks
+
+* Hooks are meant to solve the problem of being unable to break down complex components due to their stateful logic.
+* They allow us to organize logic inside a component into ["reusable, isolated units"](https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889#why-hooks)
+* This makes it possible to share stateful logic between components without containing the logic within a class. 
+
+## Using the State Hook
+
+* Normally, you couldn't keep state in a function. The useState() hook allows you to access React state within a function.
+* `useSttate(initialState)` returns an array with two items: a variable with a value equal to the current (or initial) state value and a function for setting the state value. 
+
+---
+
+
