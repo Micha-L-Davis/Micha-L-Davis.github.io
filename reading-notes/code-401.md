@@ -22,6 +22,7 @@
 20. [AWS: Events](code-401.md#aws-events)
 21. [Component Based UI](code-401#component-based-ui)
 22. [`useState()` Hook](code-401#usestate-hook)
+23. [Component Lifecycle / `useEffect()` Hook](code-401#component-lifecycle-useeffect-hook)
 
 ---
 
@@ -593,4 +594,12 @@ The element is the smallest building block of a React app.  React components are
 
 ---
 
+# Component Lifecycle / `useEffect()` Hook
 
+## Effects Hook
+
+`useEffect` brings special side-effects into function components. These effects are similar to the `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` methods all rolled into one (though these methods block the rendering of the screen until they complete--`useEffect` does not). `useEffect` triggers after every render and every update, sending a callback function the user designates to be called at that time. This functionality can be limited to a specific kind of update with an optional parameter. In this way, multiple effects can be used to separate concerns.
+
+You can also have `useEffect` return a function, which will cause that function to be run when the component unmounts. This can be useful for 'cleaning up' any effects that may require it.
+
+---
