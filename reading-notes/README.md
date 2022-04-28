@@ -63,4 +63,6 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 18. [AWS: S3 and Lambda](code-401.md#aws-s3-and-lambda)
 19. [AWS: API, Dynamo and Lambda](code-401.md#aws-api-dynamo-and-lambda)
 20. [AWS: Events](code-401.md#aws-events)
-21. [Component Based UI](code-401#component-based-ui)
+21. 21. [Component Based UI](code-401#component-based-ui)
+22. [`useState()` Hook](code-401#usestate-hook)
+23. [Component Lifecycle / `useEffect()` Hook](code-401#component-lifecycle-useeffect-hook)
