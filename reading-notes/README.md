@@ -66,3 +66,4 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 21. 21. [Component Based UI](code-401#component-based-ui)
 22. [`useState()` Hook](code-401#usestate-hook)
 23. [Component Lifecycle / `useEffect()` Hook](code-401#component-lifecycle-useeffect-hook)
+24. [Advanced State With Reducers](code-401#advanced-state-with-reducers)
