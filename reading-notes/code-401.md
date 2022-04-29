@@ -23,6 +23,7 @@
 21. [Component Based UI](code-401#component-based-ui)
 22. [`useState()` Hook](code-401#usestate-hook)
 23. [Component Lifecycle / `useEffect()` Hook](code-401#component-lifecycle-useeffect-hook)
+24. [Advanced State With Reducers](code-401#advanced-state-with-reducers)
 
 ---
 
@@ -603,3 +604,27 @@ The element is the smallest building block of a React app.  React components are
 You can also have `useEffect` return a function, which will cause that function to be run when the component unmounts. This can be useful for 'cleaning up' any effects that may require it.
 
 ---
+
+# Advanced State With Reducers
+
+## `useReducer`
+
+The `useReducer` hook is a way to manipulate state safely in the cases where state contains complex/deeply nested objects. The hook takes as its parameters a `reducer` function and the `initialState` (it can also take an `init` function which sets the initial state). It returns a variable for the current state and a function called `dispatch` which serves to set the values of the state according to the instructions in the reducer. 
+
+The reducer function itself takes as its parameters the current `state` and the `action` to be taken by the reducer. The reducer function contains within it a switch statement based upon the argument provided to the `action` parameter, along with the instructions for manipulating the state associated with the `action`.
+
+For example:
+```javascript
+function reducer(state, action) {
+  switch (action.type) {
+    case 'increment':
+      return {count: state.count + 1};
+    case 'decrement':
+      return {count: state.count - 1};
+    default:
+      throw new Error();
+  }
+}
+```
+<sub>From https://blog.logrocket.com/react-usereducer-hook-ultimate-guide/</sub>
+
