@@ -67,3 +67,4 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 22. [`useState()` Hook](code-401#usestate-hook)
 23. [Component Lifecycle / `useEffect()` Hook](code-401#component-lifecycle-useeffect-hook)
 24. [Advanced State With Reducers](code-401#advanced-state-with-reducers)
+25. [Hashtables](code-401#hashtables)
