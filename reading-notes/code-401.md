@@ -24,6 +24,7 @@
 22. [`useState()` Hook](code-401#usestate-hook)
 23. [Component Lifecycle / `useEffect()` Hook](code-401#component-lifecycle-useeffect-hook)
 24. [Advanced State With Reducers](code-401#advanced-state-with-reducers)
+25. [Hashtables](code-401#hashtables)
 
 ---
 
@@ -627,4 +628,24 @@ function reducer(state, action) {
 }
 ```
 <sub>From https://blog.logrocket.com/react-usereducer-hook-ultimate-guide/</sub>
+
+---
+
+# Hashtables
+
+Imagine a locker room with a wall full of small lockers.  
+
+![A diagram of lockers](ht1.png)
+
+Each locker has its own address in the form of a number. No two lockers share the same lock combination. As long as you know the combination you can match it to the appropriate locker and retrieve your valuables.
+
+This is the essence of a hashtable. A key-value pair is provided, the key is converted to a numerical hash, and the value is stored in the data structure at the address associated with the hash. In order to find the value, you provide the key which is converted to a numerical hash and the associated value is retrieved (provided it exists).
+
+This is an imperfect system, as it is possible to provide two different keys that resolve to the same hash (called a 'collision'). To circumvent this problem, imagine our lockers each have a number of shelves inside.  
+
+![One locker is open, showing shelves with names on them](ht2.png)
+
+On each shelf you can write the name of the person (ie, the key) whose objects are on that shelf, allowing both sets of valuables to share a single combination (hash). In terms of data structures, this is often a linked list, which is easily traversed until the proper key is found.
+
+---
 
