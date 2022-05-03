@@ -25,6 +25,7 @@
 23. [Component Lifecycle / `useEffect()` Hook](code-401#component-lifecycle-useeffect-hook)
 24. [Advanced State With Reducers](code-401#advanced-state-with-reducers)
 25. [Hashtables](code-401#hashtables)
+26. [Context API](code-401#context-api)
 
 ---
 
@@ -649,3 +650,8 @@ On each shelf you can write the name of the person (ie, the key) whose objects a
 
 ---
 
+# Context API
+
+Context is a way for React components to get access to application-level state without the need to pass it down through the layers of children components through `props`. The process involves a context script using the `React.createContext()` method to create a context, and creating a context provider function which holds the state of the context. By wrapping a component in this context provider, the component will pass the context state down to all the children in that component's hierarchy.  These 'consumer' components can import the context object and pass it through the `useContext` hook to get a reference to the context.
+
+---
