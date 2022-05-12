@@ -29,8 +29,8 @@
 27. [`<Login />` and `<Auth />`](code-401#login-and-auth)
 28. [API Integration](code-401#api-integration)
 29. [Application State with Redux](code-401#application-state-with-redux)
-30. [Redux - Combined Reducers](code-401#redux-combined-reducers)
-31. [Redux - Asynchronous Actions](code-401#redux-asynchronous-actions)
+30. [Redux - Combined Reducers](code-401#redux---combined-reducers)
+31. [Redux - Asynchronous Actions](code-401#redux---asynchronous-actions)
 
 ---
 
