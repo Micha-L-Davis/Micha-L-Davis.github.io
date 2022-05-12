@@ -26,6 +26,11 @@
 24. [Advanced State With Reducers](code-401#advanced-state-with-reducers)
 25. [Hashtables](code-401#hashtables)
 26. [Context API](code-401#context-api)
+27. [`<Login />` and `<Auth />`](code-401#login-and-auth)
+28. [API Integration](code-401#api-integration)
+29. [Application State with Redux](code-401#application-state-with-redux)
+30. [Redux - Combined Reducers](code-401#redux-combined-reducers)
+31. [Redux - Asynchronous Actions](code-401#redux-asynchronous-actions)
 
 ---
 
@@ -653,5 +658,46 @@ On each shelf you can write the name of the person (ie, the key) whose objects a
 # Context API
 
 Context is a way for React components to get access to application-level state without the need to pass it down through the layers of children components through `props`. The process involves a context script using the `React.createContext()` method to create a context, and creating a context provider function which holds the state of the context. By wrapping a component in this context provider, the component will pass the context state down to all the children in that component's hierarchy.  These 'consumer' components can import the context object and pass it through the `useContext` hook to get a reference to the context.
+
+---
+
+# `<Login />` and `<Auth />`
+
+---
+
+# API Integration
+
+---
+
+# Application State with Redux
+
+---
+
+# Redux - Combined Reducers
+
+---
+
+# Redux - Asynchronous Actions
+
+## Async Actions
+
+Redux reducers and stores cannot normally process data asynchronously. In order to achieve this, middleware is required. Redux middleware have access to the `dispatch()` function. If we pass an asynchronous function to `dispatch()` and tell the middleware to watch for any dispatched action that is a function, then we can call that function immediately. Once the asynchronous function has completed its operation, we can change the response into a standard Redux action, pass it through `dispatch()` from within the middleware, and affect state as normal.
+
+## Thunk Middleware
+
+"Thunk" is a playful term for a piece of code that does delayed work. In the specific sense of Redux, this means placing a piece of middleware into the process of a reducer action `dispatch()` call to handle delaying the updates to the store until after the thunk has thought.
+
+A basic redux thunk looks like this:
+```
+const thunk = (store) => (next) => (action) => {
+  typeof action === 'function'
+    ? action(store.dispatch, store.getState)
+    : next(action)
+}
+
+export default thunk;
+```
+
+Here we accept the store and the action. We double check that the action is a function and if so, we call it with our dispatch and state.  The function within the action should be an async function which, when complete, uses the `dispatch` it has been passed to send an action to the reducer with the resulting data from the async operation.
 
 ---
