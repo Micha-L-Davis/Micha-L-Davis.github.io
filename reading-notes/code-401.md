@@ -663,6 +663,28 @@ Context is a way for React components to get access to application-level state w
 
 # `<Login />` and `<Auth />`
 
+## Role-Based Access Control (RBAC)
+
+In RBAC, each authenticated user is assigned a role.  This role dictates the types of activities the user is authorized to perform. This allows the administrators of the controlled application to:
+
+* maintain data security
+* maintain privacy and PII compliance
+* quickly and easily switch access privileges
+* increase efficiency overall for users
+
+## React Cookies
+
+This NPM package allows a React application to save and load cookies.
+
+The two vital parts of the API are the `load` and `save` methods.
+
+* `cookie.save`
+  * Parameters: name (string), value (string||number||object), optional options object with the following properties:
+    * path, expiration date, max age in seconds, domain (for subdomain access), https secure (boolean), http only (boolean) 
+* `cookie.load`
+  * Parameters: name (string), optional doNotParse (boolean, to prevent deserializing objects and arrays)
+  * Returns the cookie value of the named string, or undefined if cookie does not exist.  
+
 ---
 
 # API Integration
@@ -701,3 +723,5 @@ export default thunk;
 Here we accept the store and the action. We double check that the action is a function and if so, we call it with our dispatch and state.  The function within the action should be an async function which, when complete, uses the `dispatch` it has been passed to send an action to the reducer with the resulting data from the async operation.
 
 ---
+
+# 
