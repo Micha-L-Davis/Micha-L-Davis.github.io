@@ -689,6 +689,22 @@ The two vital parts of the API are the `load` and `save` methods.
 
 # API Integration
 
+## Bearer Tokens
+
+Bearer tokens are assigned to a user when their identity is first authenticated. From that point forward (or until the token expires), the token will "follow" the user and act as the symbol of their authentication.
+
+## Express Middleware
+
+To facilitate authentication in express, we use Middleware, which is a unit of code which sits inbetween two other functions to facilitate their cooperation/interoperation. In this case, requests to an API are sent from the client, through authentication middleware which confirms the bearer token, and on to the appropriate API resource.
+
+## JWT
+
+JSON Web Tokens are encrypted strings which come in three parts:
+
+* Header - contains information about the token itself
+* Payload - contains encrypted JSON -- in the cause of authentication and authorization, this would be the user's identity and roles.
+* Signature - information that can verify the contents of the Payload are complete and accurate.
+
 ---
 
 # Application State with Redux
