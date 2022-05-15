@@ -707,6 +707,39 @@ JSON Web Tokens are encrypted strings which come in three parts:
 
 ---
 
+# Graphs
+
+## Anatomy of a graph
+
+Like other data structures, a graph stores data in nodes (called `vertices` in this instance) and maintains an understanding of connection between nodes (or `edges` in graph parlance). The primary difference between a graph and other structures is that it is non-hierarchical and non-linear. There is no singular root or head marking the 'beginning' of a graph, though connections can be `undirected` (that is, bidirectional) or `directed`, so information can flow in one direction. But this does not have to be universal for all edges in a graph. Edges can also carry a `wieght` value, which can be used during traversals to find a preferred total weight value for the traversal (eg, the least-costly path).
+
+## Graph Connections
+
+A graph can also maintain vertices that are **connected** or **disconnected**.  In fact, a graph can have no edges at all, just disconnected vertices. A graph where evert vertex is connected to every other vertex is considered **complete**. This leads to a graph that is **cyclic**--wherein it is posssible to return to a vertex previously visited by only traversing untraveled edges.  A graph that does not have any such connections is called **acyclic**.
+
+## Connection Representation
+
+Graphs can be represented in one of two ways: an adjacency matrix, or an adjacency list.  The matrix maintains a 2-dimensional array of all possible connections and their boolean state (usually 0 for disconnected and 1 for connected).  The adjacency list keeps only the list of vertices, the edges extending from each vertex (if any), and the destination vertex for that edge.
+
+## Traversal
+
+### Breadth First
+
+1. Enqueue the declared start node into the Queue.
+2. Create a loop that will run while the node still has nodes present.
+3. Dequeue the first node from the queue
+4. if the Dequeue‘d node has unvisited child nodes, add the unvisited children to visited set and insert them into the queue.
+
+### Depth First
+
+1. Push the start node into the Stack and mark as visited.
+2. Start a while loop that runs as long as the stack is not empty.
+3. Pop the top node off of the stack and check its neighbors.
+4. If a neighbor hasn’t been visited, push it onto the stack and mark as visited.
+5. Repeat until the stack is empty.
+
+---
+
 # Application State with Redux
 
 ---
