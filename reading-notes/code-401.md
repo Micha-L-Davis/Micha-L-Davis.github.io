@@ -743,6 +743,12 @@ Graphs can be represented in one of two ways: an adjacency matrix, or an adjacen
 
 # Application State with Redux
 
+## Fundamentals of Redux
+
+Redux is a way to maintain global app state in a predictable way and avoid a mass mutable state that could lead to difficult to track bugs. Redux works by maintaining "stores" of data, which can be read from using a getter or written to using a special kind of setter called a "reducer." These reducers work very similar to the Javascript "reduce" array prototype method. They give you the opportunity to handle complex data in a logical way.
+
+Redux wraps the entire app, allowing any part of the app to access state without having to pass it along as a prop through react components. This leaves React to handle UI and separates the management of state into its own separate set of operations.
+
 ---
 
 # Redux: Combined Reducers
