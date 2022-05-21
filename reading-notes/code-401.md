@@ -32,6 +32,7 @@
 30. [Application State with Redux](code-401#application-state-with-redux)
 31. [Redux: Combined Reducers](code-401#redux-combined-reducers)
 32. [Redux: Asynchronous Actions](code-401#redux-asynchronous-actions)
+33. [Redux: Additional Topics](code-401#redux-additional-topics)
 
 ---
 
@@ -820,4 +821,41 @@ Here we accept the store and the action. We double check that the action is a fu
 
 ---
 
-# 
+# Redux: Additional Topics
+
+## Redux Toolkit
+
+Redux Toolkit (RTK) is a package of tools and helpers that reduce the need for Redux boilerplate code and simplify the setup of state, stores, reducers and actions.  One of the more useful of these tools is the `createSlice` method, which allows a developer to create a named 'slice' of state. This slice has bundled within it all the necessary properties and methods to represent and manipulate a single aspect of state.
+
+Example implementation:
+
+```javascript
+import { createSlice } from '@reduxjs/toolkit'
+
+const initialState = { value: 0 }
+
+const counterSlice = createSlice({
+  name: 'counter',
+  initialState,
+  reducers: {
+    increment(state) {
+      state.value++
+    },
+    decrement(state) {
+      state.value--
+    },
+    incrementByAmount(state, action) {
+      state.value += action.payload
+    },
+  },
+})
+
+export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export default counterSlice.reducer
+```
+<sup>from [https://redux-toolkit.js.org/api/createSlice](https://redux-toolkit.js.org/api/createSlice)</sup>
+
+---
+
+
+---
