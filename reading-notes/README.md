@@ -75,3 +75,4 @@ Summaries of assigned readings for the CodeFellows Software Development track. D
 30. [Application State with Redux](code-401#application-state-with-redux)
 31. [Redux: Combined Reducers](code-401#redux-combined-reducers)
 32. [Redux: Asynchronous Actions](code-401#redux-asynchronous-actions)
+33. [Redux: Additional Topics](code-401#redux-additional-topics)
