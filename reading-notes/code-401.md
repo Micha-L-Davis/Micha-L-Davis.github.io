@@ -33,6 +33,7 @@
 31. [Redux: Combined Reducers](code-401#redux-combined-reducers)
 32. [Redux: Asynchronous Actions](code-401#redux-asynchronous-actions)
 33. [Redux: Additional Topics](code-401#redux-additional-topics)
+34. [React Native](code-401#redux-additional-topics)
 
 ---
 
@@ -857,5 +858,19 @@ export default counterSlice.reducer
 
 ---
 
+# React Native
+
+> React Native is an open source framework for building Android and iOS applications using React and the app platform’s native capabilities.
+*- https://reactnative.dev/docs/intro-react-native-components*
+
+## Views and Components
+
+The basis of UI construction, a view is a rectangular visual element that can display text, images, or receive user input. Each type of view is represented by a component. The standard `<View>` component acts similarly to an HTML `<div>` element. A similar view with added scroll functionality uses the `<ScrollView>` component. The `<Text>` and `<Image>` view components handle their respective media, and the `<TextInput>` component allows text entry *a la* the HTML `<input type="text">` element.
+
+## Working with React Native
+
+Expo is a framework for React Native apps. It allows a developer to test their apps in a simulated mobile environment or on a mobile device easily and quickly. It also makes distributing and updating easier. 
+
+Another quick way to test React Native code is with a snack player. These web applications allow developers to code and test in the same window.
 
 ---
