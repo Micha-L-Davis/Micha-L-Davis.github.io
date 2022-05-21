@@ -753,6 +753,46 @@ Redux wraps the entire app, allowing any part of the app to access state without
 
 # Redux: Combined Reducers
 
+One monolithic reducer handling all possible state actions is pretty bad practice.  What we can do instead, is use multiple reducers, and place them in their own file (or files).  From there, we can use the handy Redux method `combineReducers` to merge the logic of the disparate reducers and tie them to a single `dispatch` which can handle any action, while keeping the logic for each action properly encapsulated.  An example might be:
+
+```javascript
+export function userReducer((state, {type, payload}) => {
+  switch(type) {
+    case 'ADD_USER':
+       //Add user logic
+    case 'REMOVE_USER':
+      //Remove user logic
+    default:
+      return state;
+  }
+});
+
+export function dataReducer ((state, {type, payload}) => {
+    switch(type) {
+    case 'ADD_DATA':
+       //Add data logic
+    case 'REMOVE_DATA':
+      //Remove data logic
+    default:
+      return state;
+  }
+});
+
+```
+```javascript
+import { combineReducers, createStore } from 'redux';
+import { userReducer, dataReducer } from './actions';
+
+const reducer = combineReducers({
+  userState: userReducer,
+  dataState: dataReducer,
+});
+
+const store = createStore(reducer);
+```
+
+The store will now provide methods to interact with either `userState` or `dataState` through the single `reducer`
+
 ---
 
 # Redux: Asynchronous Actions
