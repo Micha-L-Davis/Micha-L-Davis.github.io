@@ -34,6 +34,7 @@
 32. [Redux: Asynchronous Actions](code-401#redux-asynchronous-actions)
 33. [Redux: Additional Topics](code-401#redux-additional-topics)
 34. [React Native](code-401#redux-additional-topics)
+35. [Ethics](code-401#ethics)
 
 ---
 
@@ -874,3 +875,13 @@ Expo is a framework for React Native apps. It allows a developer to test their a
 Another quick way to test React Native code is with a snack player. These web applications allow developers to code and test in the same window.
 
 ---
+
+# Ethics
+
+## The code I'm still ashamed of
+
+[This story](https://www.freecodecamp.org/news/the-code-im-still-ashamed-of-e4c021dff55e) by Bill Sourour tells of how, as a young web developer, he was asked to create a deceitful and unethical website.  While working for a marketing agency, Bill was tasked with creating an online quiz. The purpose of the quiz was to target a specific demographic (teen girls) and encourage them to seek a prescription for a particular brand of medication. The quiz was made to conceal the fact that the medication's manufacturer had commissioned it, and it was designed to recommend that brand of medication above all others. Sadly, the medication had a severe side-effect of suicidal ideation, leading to the death of a young girl by suicide. 
+
+## Will Democracy Survive Big Data and Artifical Intelligence?
+
+[The article](https://www.scientificamerican.com/article/will-democracy-survive-big-data-and-artificial-intelligence/) discusses how advancements in AI and mass data collection pose real risks to personal liberties. By understanding human behavior through the deep analysis of 'big data,' AI could be used to influence that behavior in positive or nefarious ways. Regardless of whether we trust the person who controls such technology, no piece of data is ever truly safe forever--meaning this technology could end up in anyone's hands. If such a tool was finely tuned, it could result in the population becoming little more than digital slaves. The author therefore believes that what we try to accomplish with these technologies must be constrained by the same ethics that underlie our most fundamental human rights.
